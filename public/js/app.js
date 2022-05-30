@@ -5449,7 +5449,7 @@ function Example() {
             children: "Example Component"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: "card-body",
-            children: "I'm an example component!"
+            children: "Si ves esto es porque react esta instalado en este proyecto"
           })]
         })
       })

@@ -9,7 +9,7 @@ function Example() {
                     <div className="card">
                         <div className="card-header">Example Component</div>
 
-                        <div className="card-body">I'm an example component!</div>
+                        <div className="card-body">Si ves esto es porque react esta instalado en este proyecto</div>
                     </div>
                 </div>
             </div>
