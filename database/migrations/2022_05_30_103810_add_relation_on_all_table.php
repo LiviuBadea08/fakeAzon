@@ -18,17 +18,17 @@ return new class extends Migration
             $table->foreign('rol_id')->references('id')->on('rols');
         });
 
-        Schema::table('brandings', function (Blueprint $table){
+        Schema::table('shops', function (Blueprint $table){
             $table->unsignedBigInteger('user_id');
 
             $table->foreign('user_id')->references('id')->on('users');
         });
 
         Schema::table('products', function (Blueprint $table){
-            $table->unsignedBigInteger('branding_id');
+            $table->unsignedBigInteger('shop_id');
             $table->unsignedBigInteger('category_id');
 
-            $table->foreign('branding_id')->references('id')->on('brandings');
+            $table->foreign('shop_id')->references('id')->on('shops');
             $table->foreign('category_id')->references('id')->on('categories');
         });
     }

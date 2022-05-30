@@ -48,8 +48,8 @@ class User extends Authenticatable
         return $this->belongsToMany(Rol::class);
     }
     
-    public function branding(){
-        return $this->hasMany(Branding::class);
+    public function shop(){
+        return $this->hasMany(Shop::class);
     } 
 
 }
