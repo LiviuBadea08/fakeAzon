@@ -19,13 +19,21 @@
                     {{ Auth::user()->rol->first()->name; }} <br>
                     {{ Auth::user()->email }} <br>
                     {{ Auth::user()->password }} <br>
-
+                    <ul>
                     @foreach (Auth::user()->shop as $shop)
-                        {{ $shop->name }} <br>
-                        @foreach ( $shop->product as $product )
-                            {{ $product->name}}<br>
+                        <li>{{ $shop->name }}</li> 
+                        <ul>
+                        @foreach ( $shop->category as $category )
+                           <li>{{ $category->name}}</li> 
+                           <ul>
+                            @foreach ($category->product as $product)
+                                <li>{{ $product->name }}</li>
+                            @endforeach
+                           </ul>
                         @endforeach
+                        </ul>
                     @endforeach
+                    </ul>
                     
 
                 </div>

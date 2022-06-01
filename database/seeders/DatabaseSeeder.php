@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
 use App\Models\Product;
 use App\Models\Rol;
 use App\Models\Shop;
@@ -47,16 +48,29 @@ class DatabaseSeeder extends Seeder
             'name' => 'La tienda de Miguel',
         ]);
 
+        $category1 = Category::factory()->create([
+            'shop_id' => $shop1->id,
+            'name' => 'michis'
+        ]);
+        
+        $category2 = Category::factory()->create([
+            'shop_id' => $shop1->id,
+            'name' => 'jhon'
+        ]);
+
         Product::factory()->create([
             'shop_id' =>  $shop1->id,
-            'name' => 'cosas de michis',
+            'category_id' => $category1->id,
+            'name' => 'comida de michis',
         ]);
         Product::factory()->create([
             'shop_id' =>  $shop1->id,
-            'name' => 'cosos de michis',
+            'category_id' => $category1->id,
+            'name' => 'jugete de michis',
         ]);
         Product::factory()->create([
             'shop_id' =>  $shop1->id,
+            'category_id' => $category2->id,
             'name' => 'sabanas para jhon',
         ]);
 
