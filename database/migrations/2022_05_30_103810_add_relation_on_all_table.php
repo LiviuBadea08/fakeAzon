@@ -26,11 +26,18 @@ return new class extends Migration
 
         Schema::table('products', function (Blueprint $table){
             $table->unsignedBigInteger('shop_id');
-            $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('category_id')->nullable();
 
             $table->foreign('shop_id')->references('id')->on('shops');
             $table->foreign('category_id')->references('id')->on('categories');
         });
+
+        Schema::table('categories', function (Blueprint $table){
+            $table->unsignedBigInteger('shop_id');
+
+            $table->foreign('shop_id')->references('id')->on('shops');
+        });
+
     }
 
     /**

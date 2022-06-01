@@ -14,7 +14,20 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ Auth::user()->id }} <br>
+                    {{ Auth::user()->name }} <br> 
+                    {{ Auth::user()->rol->first()->name; }} <br>
+                    {{ Auth::user()->email }} <br>
+                    {{ Auth::user()->password }} <br>
+
+                    @foreach (Auth::user()->shop as $shop)
+                        {{ $shop->name }} <br>
+                        @foreach ( $shop->product as $product )
+                            {{ $product->name}}<br>
+                        @endforeach
+                    @endforeach
+                    
+
                 </div>
             </div>
         </div>
