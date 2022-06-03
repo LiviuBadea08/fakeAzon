@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ShopController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -13,10 +15,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::resource('Shops', ShopController::class);
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Route::get('shops/index', [ShopController::class, 'index'])->name('michi');
 
 Auth::routes();
 

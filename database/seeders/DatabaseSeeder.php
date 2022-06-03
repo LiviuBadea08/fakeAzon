@@ -22,11 +22,11 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        Rol::factory()->create([
+        $rol = Rol::factory()->create([
             'name' => 'seller'
         ]);
 
-        $rol = Rol::factory()->create([
+        Rol::factory()->create([
             'name' => 'customer'
         ]);
 
@@ -43,10 +43,10 @@ class DatabaseSeeder extends Seeder
             'name' => 'La tienda de Michi',
         ]);
 
-        $shop2 = Shop::factory()->create([
-            'user_id' => $user->id,
-            'name' => 'La tienda de Miguel',
-        ]);
+        // $shop2 = Shop::factory()->create([
+        //     'user_id' => $user->id,
+        //     'name' => 'La tienda de Miguel',
+        // ]);
 
         $category1 = Category::factory()->create([
             'shop_id' => $shop1->id,

@@ -63,7 +63,8 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-
+                                    <a href="{{ route('Shops.index') }}">Shops</a>
+                                    <a href="{{ route('Shops.create') }}">create</a>
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
