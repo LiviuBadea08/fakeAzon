@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom';
 
 const Navbar = () => {
     return (
-        <div>Navbar</div>
+        <div>Navbar
+            
+            <i class="fa-solid fa-house-chimney"></i>
+        </div>
     )
 }
 

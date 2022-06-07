@@ -5485,9 +5485,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var Navbar = function Navbar() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-    children: "Navbar"
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    children: ["Navbar", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("i", {
+      "class": "fa-solid fa-house-chimney"
+    })]
   });
 };
 
