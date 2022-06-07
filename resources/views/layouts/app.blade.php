@@ -82,9 +82,23 @@
             </div>
         </nav> -->
         <div>
-            <div id="navbar"/>
+            <div id="navbar"/> 
+            
+        </div>
+        
+        <div>
+            <div id="label" />
         </div>
 
+        <div>
+            <div id="card" />
+        </div>
+
+
+        <div>
+            <div id="footer" />
+        </div>
+        
         <main class="py-4">
             @yield('content')
         </main>

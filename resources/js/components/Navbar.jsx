@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom';
 
 const Navbar = () => {
     return (
-        <div className="flex flex-row bg-black text-white  text-3xl font-source">
-            <div className=''>
-                ICONO FACTOZON
+        <div className="flex flex-row bg-blueSet-300 text-white  text-3xl font-source p-5 px-7">
+
+            <div class="w-32 place-content-center  ">
+                <img 
+                src={('../../images/factozon_logo.png')}
+                alt="" />
             </div>
 
-            <div>
-                <p>
+
+
+            <div class="flex flex-row ">
+                <p class="text-orangeF ">
                     INICIO
                 </p>
                 <p>
