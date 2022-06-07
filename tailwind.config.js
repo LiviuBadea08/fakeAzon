@@ -6,7 +6,15 @@ module.exports = {
     "./resources/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+
+
+
+    extend: {
+      fontFamily: {
+        'source': ['Source Sans Pro', 'sans-serif'],
+
+    },
   },
   plugins: [],
+}
 }
