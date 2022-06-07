@@ -5472,12 +5472,18 @@ function Count() {
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
     className: "count",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Rbutton__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      event: sumar,
-      slot: "+1"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Rbutton__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      event: restar,
-      slot: "-1"
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "bg-black text-white text-6xl",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Rbutton__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        event: sumar,
+        slot: "+1"
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+      className: "bg-orange-900 text-black text-3xl",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Rbutton__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        event: restar,
+        slot: "-1"
+      })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
       className: "text-6xl text-orange-500 ",
       children: num
@@ -5562,7 +5568,6 @@ __webpack_require__.r(__webpack_exports__);
 var Rbutton = function Rbutton(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "bg-black text-white text-6xl ",
       onClick: props.event,
       children: [props.slot, " hello"]
     })

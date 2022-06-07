@@ -4,7 +4,7 @@ const Rbutton = ( props ) => {
 
     return (
         <div >
-            <div className="bg-black text-white text-6xl " onClick={ props.event } >
+            <div  onClick={ props.event } >
                 { props.slot } hello
 
 

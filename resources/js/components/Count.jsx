@@ -22,9 +22,14 @@ function Count() {
     return (
         <div className="count" >
             
+            <div className="bg-black text-white text-6xl" >
             <Rbutton event={ sumar } slot= "+1" />
+            </div>
             
+            <div className="bg-orange-900 text-black text-3xl">
+
             <Rbutton event={ restar } slot= "-1" />
+            </div>
 
         <p className="text-6xl text-orange-500 ">
 
