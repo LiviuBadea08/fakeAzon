@@ -81,9 +81,9 @@
                 </div>
             </div>
         </nav> -->
-        <div>
-            <div id="navbar"/> 
-            
+
+        <div class="w-full">
+            <div id="navbar"/>  
         </div>
         
         <div>
