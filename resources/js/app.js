@@ -20,3 +20,4 @@ require ('./components/Footer');
 require ('./components/Label');
 
 require ('./components/Navbar');
+require ('./components/nav/Search');

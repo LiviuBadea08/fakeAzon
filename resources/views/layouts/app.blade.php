@@ -82,12 +82,12 @@
             </div>
         </nav> -->
 
-        <div class="w-full">
+        <div>
             <div id="navbar"/>  
         </div>
         
         <div>
-            <div id="label" />
+            {{-- <div id="label" />
         </div>
 
         <div>
@@ -97,7 +97,7 @@
 
         <div>
             <div id="footer" />
-        </div>
+        </div> --}}
         
         <main class="py-4">
             @yield('content')
