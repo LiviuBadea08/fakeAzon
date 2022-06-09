@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <nav className="bg-setBlue-300">
             <div className="container">
-                <div className="flex w-full justify-between flex-wrap sm:flex-nowrap">
+                <div className="nav">
                     <div className="flex items-center">
                         <div className="w-1/4 mx-2">
                             <img src={('https://i.postimg.cc/HLXqL6R7/factozon-logo.png')} alt="" />
@@ -22,7 +22,7 @@ const Navbar = () => {
                     </div>
 
                     <div className="flex items-center">
-                        <div id="search" className="w-full lg:w-64" />
+                        <Search className="w-full lg:w-64" />
                         <div className="px-4 border-b-4 border-setBlue-300 hover:border-setOrange">
                             <i className="fa-solid fa-user text-setGray-200 text-3xl pb-[0.95rem] pt-4" />
                         </div>
