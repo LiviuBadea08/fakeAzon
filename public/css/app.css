@@ -21024,33 +21024,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mb-0 {
   margin-bottom: 0px;
 }
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-.mb-4 {
-  margin-bottom: 1rem;
-}
-.mt-2 {
-  margin-top: 0.5rem;
-}
-.mt-4 {
-  margin-top: 1rem;
-}
-.mt-\[\] {
-  margin-top: ;
-}
-.mt-\[1rem\] {
-  margin-top: 1rem;
-}
-.mb-\[\] {
-  margin-bottom: ;
-}
-.mb-\[1rem\] {
-  margin-bottom: 1rem;
-}
 .flex {
   display: flex;
 }
@@ -21084,27 +21057,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-row {
   flex-direction: row;
 }
-.flex-wrap {
-  flex-wrap: wrap;
-}
 .items-center {
   align-items: center;
 }
 .justify-start {
   justify-content: flex-start;
 }
-.justify-between {
-  justify-content: space-between;
-}
 .rounded-full {
   border-radius: 9999px;
 }
 .border-b-4 {
   border-bottom-width: 4px;
-}
-.border-indigo-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(99 102 241 / var(--tw-border-opacity));
 }
 .border-setBlue-300 {
   --tw-border-opacity: 1;
@@ -21121,159 +21084,32 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-0 {
   padding: 0px;
 }
-.p-\[1\.4rem\] {
-  padding: 1.4rem;
-}
-.p-\[1\.31rem\] {
-  padding: 1.31rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.px-\[\] {
-  padding-left: ;
-  padding-right: ;
+.pb-\[1\.25rem\] {
+  padding-bottom: 1.25rem;
 }
-.px-\[1\.4rem\] {
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
-}
-.py-\[\] {
-  padding-top: ;
-  padding-bottom: ;
-}
-.py-\[1\.4rem\] {
-  padding-top: 1.4rem;
-  padding-bottom: 1.4rem;
-}
-.py-\[0\.9\] {
-  padding-top: 0.9;
-  padding-bottom: 0.9;
-}
-.py-\[0\.9rem\] {
-  padding-top: 0.9rem;
-  padding-bottom: 0.9rem;
-}
-.py-\[1rem\] {
+.pt-4 {
   padding-top: 1rem;
-  padding-bottom: 1rem;
 }
-.py-\[1\.rem\] {
-  padding-top: 1.rem;
-  padding-bottom: 1.rem;
-}
-.py-\[1\.5rem\] {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-.py-\[1\] {
-  padding-top: 1;
-  padding-bottom: 1;
-}
-.py-\[1\.2rem\] {
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-}
-.py-\[1\.3rem\] {
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
-}
-.py-\[1\.31rem\] {
-  padding-top: 1.31rem;
-  padding-bottom: 1.31rem;
-}
-.py-\[1\.32rem\] {
-  padding-top: 1.32rem;
-  padding-bottom: 1.32rem;
-}
-.py-\[1\.33rem\] {
-  padding-top: 1.33rem;
-  padding-bottom: 1.33rem;
-}
-.py-\[1\.34rem\] {
-  padding-top: 1.34rem;
-  padding-bottom: 1.34rem;
-}
-.py-\[1\.39rem\] {
-  padding-top: 1.39rem;
-  padding-bottom: 1.39rem;
-}
-.py-\[1\.38rem\] {
-  padding-top: 1.38rem;
-  padding-bottom: 1.38rem;
+.pb-\[0\.95rem\] {
+  padding-bottom: 0.95rem;
 }
 .pl-\[10px\] {
   padding-left: 10px;
 }
 .pl-\[30px\] {
   padding-left: 30px;
-}
-.pt-\[1\.4rem\] {
-  padding-top: 1.4rem;
-}
-.pb-\[1\.4rem\] {
-  padding-bottom: 1.4rem;
-}
-.pb-\[\] {
-  padding-bottom: ;
-}
-.pb-\[\[1\.4rem\]\] {
-  padding-bottom: [1.4rem];
-}
-.pb-\[1\.rem\] {
-  padding-bottom: 1.rem;
-}
-.pb-\[1\.2rem\] {
-  padding-bottom: 1.2rem;
-}
-.pt-\[1\.5rem\] {
-  padding-top: 1.5rem;
-}
-.pt-\[1\.6rem\] {
-  padding-top: 1.6rem;
-}
-.pt-\[1\.31rem\] {
-  padding-top: 1.31rem;
-}
-.pt-4 {
-  padding-top: 1rem;
-}
-.pb-4 {
-  padding-bottom: 1rem;
-}
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-.pb-\[1\.5rem\] {
-  padding-bottom: 1.5rem;
-}
-.pb-\[0rem\] {
-  padding-bottom: 0rem;
-}
-.pb-\[0\.95rem\] {
-  padding-bottom: 0.95rem;
-}
-.pb-\[1\2c 25\] {
-  padding-bottom: 1,25;
-}
-.pb-\[1\.25\] {
-  padding-bottom: 1.25;
-}
-.pb-\[1\.25rem\] {
-  padding-bottom: 1.25rem;
 }
 .align-baseline {
   vertical-align: baseline;
@@ -21319,24 +21155,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.hover\:border:hover {
-  border-width: 1px;
-}
-.hover\:border-b-4:hover {
-  border-bottom-width: 4px;
-}
-.hover\:border-setBrown-200:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(128 128 128 / var(--tw-border-opacity));
-}
-.hover\:border-setBrown-100:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(217 217 217 / var(--tw-border-opacity));
-}
-.hover\:border-setBrown-300:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(89 66 66 / var(--tw-border-opacity));
-}
 .hover\:border-setOrange:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 160 45 / var(--tw-border-opacity));
@@ -21348,19 +21166,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
-@media (min-width: 640px) {
-
-  .sm\:flex-nowrap {
-    flex-wrap: nowrap;
-  }
-}
 @media (min-width: 1024px) {
 
   .lg\:w-64 {
     width: 16rem;
-  }
-
-  .lg\:flex-nowrap {
-    flex-wrap: nowrap;
   }
 }
