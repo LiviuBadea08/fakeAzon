@@ -5715,7 +5715,8 @@ var Navbar = function Navbar() {
         className: "nav",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
           className: "flex items-center",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+            href: "/",
             className: "w-1/4 mx-2",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
               src: 'https://i.postimg.cc/HLXqL6R7/factozon-logo.png',
@@ -5724,16 +5725,24 @@ var Navbar = function Navbar() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("ul", {
             className: "flex capitalize font-bold font-source",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-              className: " px-4 border-b-4 border-setBlue-300 hover:border-setOrange",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-                className: "text-setGray-100 text-2xl pb-[1.25rem] pt-4",
-                children: "inicio"
+              className: "  border-b-4 border-setBlue-300 hover:border-setOrange",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+                href: "/",
+                className: "pb-[1.25rem] pt-4 px-4 flex items-center",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+                  className: "text-setGray-100 text-2xl",
+                  children: "inicio"
+                })
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("li", {
-              className: " px-4 border-b-4 border-setBlue-300 hover:border-setOrange",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-                className: "text-setGray-100 text-2xl pb-[1.25rem] pt-4",
-                children: "marcas"
+              className: "  border-b-4 border-setBlue-300 hover:border-setOrange",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+                href: "/Shops",
+                className: "pb-[1.25rem] pt-4 px-4 flex items-center",
+                children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+                  className: "text-setGray-100 text-2xl",
+                  children: "marcas"
+                })
               })
             })]
           })]
@@ -5742,14 +5751,22 @@ var Navbar = function Navbar() {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Object(function webpackMissingModule() { var e = new Error("Cannot find module './nav/search'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
             className: "w-full lg:w-64"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-            className: "px-4 border-b-4 border-setBlue-300 hover:border-setOrange",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
-              className: "fa-solid fa-user text-setGray-200 text-3xl pb-[0.95rem] pt-4"
+            className: "border-b-4 border-setBlue-300 hover:border-setOrange",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+              href: "/login",
+              className: "px-4 pb-[0.95rem] pt-4 flex items-center",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+                className: "fa-solid fa-user text-setGray-200 text-3xl"
+              })
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-            className: "px-4 border-b-4 border-setBlue-300 hover:border-setOrange",
-            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
-              className: "fa-solid fa-bag-shopping text-setGray-200 text-3xl pb-[0.95rem] pt-4"
+            className: "border-b-4 border-setBlue-300 hover:border-setOrange",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+              href: "/",
+              className: "px-4 pb-[0.95rem] pt-4 flex items-center",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("i", {
+                className: "fa-solid fa-bag-shopping text-setGray-200 text-3xl"
+              })
             })
           })]
         })]
