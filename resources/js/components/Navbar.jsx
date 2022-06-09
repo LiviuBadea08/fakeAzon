@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Search from "./nav/search";
+import Search from "./nav/Search";
 
 const Navbar = () => {
     return (
