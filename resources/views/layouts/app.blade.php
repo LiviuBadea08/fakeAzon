@@ -25,21 +25,21 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
-    <div class="h-screen" id="app">
+<body class="bg-setGray-200">
+    <div class="h-screen flex flex-col justify-between" id="app">
+        <div >
+            <div class="block">
+                <div id="navbar"></div>
+            </div>
 
-        <div>
-            <div id="navbar"/>  
+            <main class="py-4">
+                @yield('content')
+            </main>
         </div>
-        
-        <main class="py-4">
-            @yield('content')
-        </main>
 
-        <div class="fixed inset-x-0 bottom-0">
-            <div id="footer" />
+        <div class="block">
+            <div id="footer"></div>
         </div>
-        
     </div>
 </body>
 </html>

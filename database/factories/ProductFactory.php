@@ -18,6 +18,7 @@ class ProductFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
+            'picture' => $this->faker->imageUrl($width = 640, $height = 480),
         ];
     }
 }
