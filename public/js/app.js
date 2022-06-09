@@ -5447,12 +5447,27 @@ __webpack_require__.r(__webpack_exports__);
 
 var Card = function Card() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    className: "flex flex-row bg-blueSet-300 text-white w-3/12 h-1/12  text-6xl font-source ",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": " bg-orangeF w-1/12 h-full ",
-      children: "Card Figma"
+    "class": "flex flex-col  bg-setBlue-100 w-96 h-80  rounded-sm shadow-md    ",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      "class": "flex max-w-full h-1/5 items-center place-content-center   ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        "class": " bg-setOrange start w-4 h-4 "
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        "class": "text-setGray-100  text-4xl font-source font-black   ",
+        href: "",
+        children: "shop/item"
+      })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": "text-6xl text-blueSet-100"
+      "class": "bg-setGray-100 w-80 h-56 place-self-center text-center p-2  ",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        "class": " text-2xl font-bold  ",
+        href: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+          "class": " h-full w-full  object-center ",
+          src: "https://i.postimg.cc/jLwhqwSB/crocs.png",
+          alt: ""
+        })
+      })
     })]
   });
 };
@@ -5636,12 +5651,28 @@ __webpack_require__.r(__webpack_exports__);
 
 var Label = function Label() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    className: "flex flex-row bg-blueSet-300 text-white w-3/12 h-1/12  text-3xl font-source ",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": " bg-orangeF w-1/12 h-full "
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": "text-6xl text-blueSet-100",
-      children: "Label Figma"
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+      href: "",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        "class": "flex flex-row bg-setBlue-100 text-setGray-100 h-14 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          "class": " bg-setGray-200 hover:bg-setOrange w-2/12 h-full mr-1 "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          "class": "flex self-center text-2xl font-bold text-setGray-100 hover:text-setOrange ",
+          children: "Label Figma"
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+      href: "",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        "class": "flex flex-col-reverse bg-setBlue-100 text-white h-16 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          "class": " bg-setGray-200 hover:bg-setOrange w-full h-3 mr-1 "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          "class": "flex place-self-center mb-1 text-2xl font-bold text-setGray-100 hover:text-setOrange ",
+          children: "Label Figma"
+        })]
+      })
     })]
   });
 };
@@ -5667,7 +5698,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _nav_search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nav/search */ "./resources/js/components/nav/search.jsx");
+/* harmony import */ var _nav_Search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nav/Search */ "./resources/js/components/nav/Search.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -5717,7 +5748,7 @@ var Navbar = function Navbar() {
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
           className: "flex items-center",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_nav_search__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_nav_Search__WEBPACK_IMPORTED_MODULE_2__["default"], {
             className: "w-full lg:w-64"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
             className: "border-b-4 border-setBlue-300 hover:border-setOrange",
@@ -5752,9 +5783,9 @@ if (document.getElementById("navbar")) {
 
 /***/ }),
 
-/***/ "./resources/js/components/nav/search.jsx":
+/***/ "./resources/js/components/nav/Search.jsx":
 /*!************************************************!*\
-  !*** ./resources/js/components/nav/search.jsx ***!
+  !*** ./resources/js/components/nav/Search.jsx ***!
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 

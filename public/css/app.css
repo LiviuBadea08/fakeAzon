@@ -21046,6 +21046,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-4 {
   margin-right: 1rem;
 }
+.mr-1 {
+  margin-right: 0.25rem;
+}
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .flex {
   display: flex;
 }
@@ -21067,6 +21073,27 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-auto {
   height: auto;
 }
+.h-80 {
+  height: 20rem;
+}
+.h-1\/5 {
+  height: 20%;
+}
+.h-4 {
+  height: 1rem;
+}
+.h-56 {
+  height: 14rem;
+}
+.h-14 {
+  height: 3.5rem;
+}
+.h-16 {
+  height: 4rem;
+}
+.h-3 {
+  height: 0.75rem;
+}
 .w-3\/12 {
   width: 25%;
 }
@@ -21082,6 +21109,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-1\/4 {
   width: 25%;
 }
+.w-96 {
+  width: 24rem;
+}
+.w-4 {
+  width: 1rem;
+}
+.w-80 {
+  width: 20rem;
+}
+.w-52 {
+  width: 13rem;
+}
+.w-2\/12 {
+  width: 16.666667%;
+}
+.max-w-full {
+  max-width: 100%;
+}
 .cursor-pointer {
   cursor: pointer;
 }
@@ -21091,8 +21136,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-col {
   flex-direction: column;
 }
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
 .flex-wrap {
   flex-wrap: wrap;
+}
+.place-content-center {
+  place-content: center;
 }
 .items-center {
   align-items: center;
@@ -21103,8 +21154,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-between {
   justify-content: space-between;
 }
+.place-self-center {
+  place-self: center;
+}
+.self-center {
+  align-self: center;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
 .rounded-full {
   border-radius: 9999px;
+}
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 .border-b-4 {
   border-bottom-width: 4px;
@@ -21121,11 +21187,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-setBlue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(85 101 115 / var(--tw-bg-opacity));
+}
+.bg-setOrange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 160 45 / var(--tw-bg-opacity));
+}
+.bg-setGray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 242 242 / var(--tw-bg-opacity));
+}
+.bg-setGray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(141 154 166 / var(--tw-bg-opacity));
+}
+.object-center {
+  -o-object-position: center;
+     object-position: center;
+}
 .p-0 {
   padding: 0px;
 }
 .p-4 {
   padding: 1rem;
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -21154,6 +21243,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pl-\[30px\] {
   padding-left: 30px;
 }
+.text-center {
+  text-align: center;
+}
 .align-baseline {
   vertical-align: baseline;
 }
@@ -21176,8 +21268,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .font-bold {
   font-weight: 700;
+}
+.font-black {
+  font-weight: 900;
 }
 .capitalize {
   text-transform: capitalize;
@@ -21207,9 +21306,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .hover\:border-setOrange:hover {
   --tw-border-opacity: 1;
   border-color: rgb(255 160 45 / var(--tw-border-opacity));
+}
+.hover\:bg-setOrange:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 160 45 / var(--tw-bg-opacity));
+}
+.hover\:text-setOrange:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 160 45 / var(--tw-text-opacity));
 }
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline;
