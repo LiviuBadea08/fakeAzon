@@ -5447,12 +5447,27 @@ __webpack_require__.r(__webpack_exports__);
 
 var Card = function Card() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    className: "flex flex-row bg-blueSet-300 text-white w-3/12 h-1/12  text-6xl font-source ",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": " bg-orangeF w-1/12 h-full ",
-      children: "Card Figma"
+    "class": "flex flex-col  bg-setBlue-100 w-96 h-80  rounded-sm shadow-md    ",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      "class": "flex max-w-full h-1/5 items-center place-content-center   ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        "class": " bg-setOrange start w-4 h-4 "
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        "class": "text-setGray-100  text-4xl font-source font-black   ",
+        href: "",
+        children: "shop/item"
+      })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": "text-6xl text-blueSet-100"
+      "class": "bg-setGray-100 w-80 h-56 place-self-center text-center p-2  ",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        "class": " text-2xl font-bold  ",
+        href: "",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+          "class": " h-full w-full  object-center ",
+          src: "https://i.postimg.cc/jLwhqwSB/crocs.png",
+          alt: ""
+        })
+      })
     })]
   });
 };
@@ -5534,13 +5549,75 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Footer = function Footer() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    className: "flex flex-row bg-blueSet-300 text-white w-72 h-72  text-3xl font-source ",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": " bg-orangeF w-full h-full "
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": "text-6xl text-blueSet-100 ",
-      children: "Footer"
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("footer", {
+    "class": "p-4 bg-setBlue-300  shadow md:flex md:items-center md:justify-between md:p-6 ",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
+      "class": "text-sm text-setGray-100 sm:text-center ",
+      children: ["\xA9 2022", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        href: "",
+        "class": "hover:underline",
+        children: "Factozon\u2122"
+      }), ". All Rights Reserved."]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
+      "class": "flex flex-wrap text-setGray-100 items-center mt-3 text-sm sm:mt-0 ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          href: "",
+          "class": " hover:underline mr-7  ",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            "class": "h-10 mr-5 ",
+            src: 'https://i.postimg.cc/SXnkNYs2/Facebook.png',
+            alt: ""
+          })
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          href: "",
+          "class": " hover:underline mr-7    ",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            "class": "h-10 mr-5 ",
+            src: 'https://i.postimg.cc/LqQ5xMqf/Instragram.png',
+            alt: ""
+          })
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          href: "",
+          "class": " hover:underline mr-7    ",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+            "class": "h-10 mr-5 ",
+            src: 'https://i.postimg.cc/t18y1RZr/Twitter.png',
+            alt: ""
+          })
+        })
+      })]
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
+      "class": "flex flex-wrap text-setGray-100 items-center mt-3 text-sm sm:mt-0 ",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          href: "",
+          "class": "mr-4 hover:underline md:mr-6 ",
+          children: "About"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          href: "",
+          "class": "mr-4 hover:underline md:mr-6",
+          children: "Privacy Policy"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          href: "",
+          "class": "mr-4 hover:underline md:mr-6",
+          children: "Licensing"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+          href: "",
+          "class": "hover:underline",
+          children: "Contact"
+        })
+      })]
     })]
   });
 };
@@ -5574,12 +5651,28 @@ __webpack_require__.r(__webpack_exports__);
 
 var Label = function Label() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    className: "flex flex-row bg-blueSet-300 text-white w-3/12 h-1/12  text-3xl font-source ",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": " bg-orangeF w-1/12 h-full "
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": "text-6xl text-blueSet-100",
-      children: "Label Figma"
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+      href: "",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        "class": "flex flex-row bg-setBlue-100 text-setGray-100 h-14 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          "class": " bg-setGray-200 hover:bg-setOrange w-2/12 h-full mr-1 "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          "class": "flex self-center text-2xl font-bold text-setGray-100 hover:text-setOrange ",
+          children: "Label Figma"
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+      href: "",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+        "class": "flex flex-col-reverse bg-setBlue-100 text-white h-16 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          "class": " bg-setGray-200 hover:bg-setOrange w-full h-3 mr-1 "
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+          "class": "flex place-self-center mb-1 text-2xl font-bold text-setGray-100 hover:text-setOrange ",
+          children: "Label Figma"
+        })]
+      })
     })]
   });
 };
@@ -5605,7 +5698,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _nav_search__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nav/search */ "./resources/js/components/nav/search.jsx");
+Object(function webpackMissingModule() { var e = new Error("Cannot find module './nav/search'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -5646,7 +5739,7 @@ var Navbar = function Navbar() {
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
           className: "flex items-center",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_nav_search__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Object(function webpackMissingModule() { var e = new Error("Cannot find module './nav/search'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), {
             className: "w-full lg:w-64"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
             className: "px-4 border-b-4 border-setBlue-300 hover:border-setOrange",
@@ -5670,39 +5763,6 @@ var Navbar = function Navbar() {
 if (document.getElementById("navbar")) {
   react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(Navbar, {}), document.getElementById("navbar"));
 }
-
-/***/ }),
-
-/***/ "./resources/js/components/nav/search.jsx":
-/*!************************************************!*\
-  !*** ./resources/js/components/nav/search.jsx ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
-
-
-
-var Search = function Search() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    className: "relative flex justify-start items-center w-full",
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
-      className: "fa-solid fa-magnifying-glass pl-[10px] absolute cursor-pointer opacity-60 hover:opacity-80"
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("input", {
-      type: "text",
-      className: "py-[8px] pl-[30px] rounded-full focus:outline-none focus:shadow-outline w-full"
-    })]
-  });
-};
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Search);
 
 /***/ }),
 
@@ -10750,7 +10810,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".nav{\r\n    display:flex;\r\n    justify-content:space-between;\r\n    flex-wrap: nowrap;\r\n}\r\n@media (max-width: 640px) {\r\n    .nav{\r\n        flex-wrap: wrap;\r\n    }\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".nav{\n    display:flex;\n    justify-content:space-between;\n    flex-wrap: nowrap;\n}\n@media (max-width: 640px) {\n    .nav{\n        flex-wrap: wrap;\n    }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
