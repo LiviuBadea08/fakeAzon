@@ -21005,11 +21005,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1536px;
   }
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
 .relative {
   position: relative;
+}
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+.bottom-0 {
+  bottom: 0px;
 }
 .m-0 {
   margin: 0px;
@@ -21075,6 +21085,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-3 {
   height: 0.75rem;
 }
+.h-screen {
+  height: 100vh;
+}
 .w-96 {
   width: 24rem;
 }
@@ -21122,6 +21135,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .justify-start {
   justify-content: flex-start;
+}
+.justify-between {
+  justify-content: space-between;
 }
 .place-self-center {
   place-self: center;

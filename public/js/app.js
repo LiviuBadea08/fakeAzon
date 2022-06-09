@@ -5550,22 +5550,22 @@ __webpack_require__.r(__webpack_exports__);
 
 var Footer = function Footer() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("footer", {
-    "class": "p-4 bg-setBlue-300  shadow md:flex md:items-center md:justify-between md:p-6 ",
+    className: "p-4 bg-setBlue-300  shadow md:flex md:items-center md:justify-between md:p-6 ",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("span", {
-      "class": "text-sm text-setGray-100 sm:text-center ",
+      className: "text-sm text-setGray-100 sm:text-center ",
       children: ["\xA9 2022", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
         href: "",
-        "class": "hover:underline",
+        className: "hover:underline",
         children: "Factozon\u2122"
       }), ". All Rights Reserved."]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
-      "class": "flex flex-wrap text-setGray-100 items-center mt-3 text-sm sm:mt-0 ",
+      className: "flex flex-wrap text-setGray-100 items-center mt-3 text-sm sm:mt-0 ",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
           href: "",
-          "class": " hover:underline mr-7  ",
+          className: " hover:underline mr-7  ",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-            "class": "h-10 mr-5 ",
+            className: "h-10 mr-5 ",
             src: 'https://i.postimg.cc/SXnkNYs2/Facebook.png',
             alt: ""
           })
@@ -5573,9 +5573,9 @@ var Footer = function Footer() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
           href: "",
-          "class": " hover:underline mr-7    ",
+          className: " hover:underline mr-7    ",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-            "class": "h-10 mr-5 ",
+            className: "h-10 mr-5 ",
             src: 'https://i.postimg.cc/LqQ5xMqf/Instragram.png',
             alt: ""
           })
@@ -5583,38 +5583,38 @@ var Footer = function Footer() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
           href: "",
-          "class": " hover:underline mr-7    ",
+          className: " hover:underline mr-7    ",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-            "class": "h-10 mr-5 ",
+            className: "h-10 mr-5 ",
             src: 'https://i.postimg.cc/t18y1RZr/Twitter.png',
             alt: ""
           })
         })
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
-      "class": "flex flex-wrap text-setGray-100 items-center mt-3 text-sm sm:mt-0 ",
+      className: "flex flex-wrap text-setGray-100 items-center mt-3 text-sm sm:mt-0 ",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
           href: "",
-          "class": "mr-4 hover:underline md:mr-6 ",
+          className: "mr-4 hover:underline md:mr-6 ",
           children: "About"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
           href: "",
-          "class": "mr-4 hover:underline md:mr-6",
+          className: "mr-4 hover:underline md:mr-6",
           children: "Privacy Policy"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
           href: "",
-          "class": "mr-4 hover:underline md:mr-6",
+          className: "mr-4 hover:underline md:mr-6",
           children: "Licensing"
         })
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
           href: "",
-          "class": "hover:underline",
+          className: "hover:underline",
           children: "Contact"
         })
       })]
