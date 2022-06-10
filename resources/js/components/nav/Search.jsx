@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 
 const Search = () => {
     return (
@@ -9,4 +10,7 @@ const Search = () => {
     )
 }
 
-export default Search
+export default Search;
+if (document.getElementById("search")) {
+  ReactDOM.render(<Search />, document.getElementById("search"));
+}

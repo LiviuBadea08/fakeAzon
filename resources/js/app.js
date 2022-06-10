@@ -22,4 +22,6 @@ require ('./components/Label');
 
 require ('./components/Navbar');
 
+require ('./components/nav/Search');
+
 require ('./components/MainCard');
