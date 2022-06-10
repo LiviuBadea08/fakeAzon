@@ -5466,6 +5466,12 @@ var Card = function Card(props) {
       shop = _useState2[0],
       setShop = _useState2[1];
 
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("Shops/" + shop.id),
+      _useState4 = _slicedToArray(_useState3, 2),
+      route = _useState4[0],
+      setRoute = _useState4[1];
+
+  console.log(route);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     className: "flex flex-col  bg-setBlue-100 w-96 h-80  rounded-sm shadow-md",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -5474,14 +5480,14 @@ var Card = function Card(props) {
         className: " bg-setOrange start w-4 h-4 "
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
         className: "text-setGray-100  text-4xl font-source font-black",
-        href: "",
+        href: route,
         children: shop.name.replace(/[_]/gi, ' ')
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
       className: "bg-setGray-100 w-80 h-56 place-self-center text-center p-2  ",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
         className: " text-2xl font-bold  ",
-        href: "Shops/",
+        href: route,
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
           className: " h-full w-full  object-center ",
           src: "https://i.postimg.cc/jLwhqwSB/crocs.png",
