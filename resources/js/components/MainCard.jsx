@@ -11,7 +11,6 @@ const MainCard = (props) => {
     <div className='bg-setBlue-100'>
       <div className='flex flex-col'>
         <div className='text-center text-setGray-100 font-bold font-source text-3xl uppercase'>{name}</div>
-
         <div className='flex'>
           <div>
             <div className='w-[573px] h-[540px]'>

@@ -21078,26 +21078,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-3 {
   height: 0.75rem;
 }
-.h-screen {
-  height: 100vh;
-}
-.h-\[\] {
-  height: ;
-}
-.h-\[540\] {
-  height: 540;
-}
 .h-\[540px\] {
   height: 540px;
 }
-.h-\[565\] {
-  height: 565;
-}
-.h-\[5\] {
-  height: 5;
-}
-.h-\[565px\] {
-  height: 565px;
+.h-screen {
+  height: 100vh;
 }
 .w-96 {
   width: 24rem;
@@ -21117,32 +21102,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-2\/12 {
   width: 16.666667%;
 }
-.w-1\/4 {
-  width: 25%;
-}
-.w-\[\] {
-  width: ;
-}
-.w-\[5\] {
-  width: 5;
-}
-.w-\[573\] {
-  width: 573;
-}
 .w-\[573px\] {
   width: 573px;
 }
-.w-\[5px\] {
-  width: 5px;
-}
-.w-\[565px\] {
-  width: 565px;
-}
-.w-\[100\] {
-  width: 100;
-}
-.w-\[100\%\] {
-  width: 100%;
+.w-1\/4 {
+  width: 25%;
 }
 .max-w-full {
   max-width: 100%;
@@ -21218,10 +21182,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-setGray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(141 154 166 / var(--tw-bg-opacity));
-}
-.bg-setBlue-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(35 47 62 / var(--tw-bg-opacity));
 }
 .object-center {
   -o-object-position: center;

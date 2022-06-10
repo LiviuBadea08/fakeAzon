@@ -5442,30 +5442,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
 
 
-var Card = function Card() {
+
+
+var Card = function Card(props) {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(JSON.parse(props.data)),
+      _useState2 = _slicedToArray(_useState, 2),
+      shop = _useState2[0],
+      setShop = _useState2[1];
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    "class": "flex flex-col  bg-setBlue-100 w-96 h-80  rounded-sm shadow-md    ",
+    className: "flex flex-col  bg-setBlue-100 w-96 h-80  rounded-sm shadow-md",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      "class": "flex max-w-full h-1/5 items-center place-content-center   ",
+      className: "flex max-w-full h-1/5 items-center place-content-center",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        "class": " bg-setOrange start w-4 h-4 "
+        className: " bg-setOrange start w-4 h-4 "
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-        "class": "text-setGray-100  text-4xl font-source font-black   ",
+        className: "text-setGray-100  text-4xl font-source font-black",
         href: "",
-        children: "shop/item"
+        children: shop.name.replace(/[_]/gi, ' ')
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      "class": "bg-setGray-100 w-80 h-56 place-self-center text-center p-2  ",
+      className: "bg-setGray-100 w-80 h-56 place-self-center text-center p-2  ",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-        "class": " text-2xl font-bold  ",
-        href: "",
+        className: " text-2xl font-bold  ",
+        href: "Shops/",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
-          "class": " h-full w-full  object-center ",
+          className: " h-full w-full  object-center ",
           src: "https://i.postimg.cc/jLwhqwSB/crocs.png",
           alt: ""
         })
@@ -5477,7 +5495,10 @@ var Card = function Card() {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Card);
 
 if (document.getElementById("card")) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Card, {}), document.getElementById("card"));
+  var data = document.getElementById('card').getAttribute('data');
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Card, {
+    data: data
+  }), document.getElementById("card"));
 }
 
 /***/ }),
