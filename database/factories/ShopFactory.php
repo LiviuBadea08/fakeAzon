@@ -17,7 +17,8 @@ class ShopFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->name(),
+            'logo' => $this->faker->imageUrl($width = 640, $height = 480),
         ];
     }
 }

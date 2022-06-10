@@ -41,6 +41,7 @@ class DatabaseSeeder extends Seeder
         $shop1 = Shop::factory()->create([
             'user_id' => $user->id,
             'name' => 'La_tienda_de_Michi',
+            'logo' => 'https://i.postimg.cc/jLwhqwSB/crocs.png',
         ]);
 
         // $shop2 = Shop::factory()->create([

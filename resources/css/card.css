@@ -1,0 +1,58 @@
+.first-card{
+    transition: all 400ms ease;
+}
+.first-card div{
+    transition: all 400ms ease;
+}
+
+.first-card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.first-card:hover div{
+    transform: scale(1.1);
+}
+
+.other-card{
+    transition: all 400ms ease;
+    display: flex;
+    align-items: flex-end;
+}
+
+.other-card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.other-card div:first-child{
+    transition: all 400ms ease;
+    position: absolute;
+}
+
+.other-card:hover div:first-child{
+    transform: scale(1.1);
+}
+
+.other-card div:nth-child(2){
+    text-transform: uppercase;
+    position:absolute;
+    width: 100%;
+    height: 25%;
+    background: rgba(1, 7, 8, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.other-card:hover div:nth-child(2){
+    opacity: 1;
+    visibility: visible;
+    
+}
+
+.other-card:hover div:nth-child(2) h3{
+    text-align: center;
+}

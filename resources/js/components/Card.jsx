@@ -4,8 +4,8 @@ import { useState } from "react";
 
 const Card = (props) => {
     const [shop, setShop] = useState(JSON.parse(props.data));
-    const [route, setRoute] = useState("Shops/" + shop.id);
-    console.log(route);
+    const [route, setRoute] = useState("shops/" + shop.id);
+    console.log(shop);
     return (
         <div className="flex flex-col  bg-setBlue-100 w-96 h-80  rounded-sm shadow-md">
             <div className="flex max-w-full h-1/5 items-center place-content-center">
@@ -19,11 +19,7 @@ const Card = (props) => {
 
             <div className="bg-setGray-100 w-80 h-56 place-self-center text-center p-2  ">
                 <a className=" text-2xl font-bold  " href={route}>
-                    <img
-                        className=" h-full w-full  object-center "
-                        src={"https://i.postimg.cc/jLwhqwSB/crocs.png"}
-                        alt=""
-                    />
+                    <img className=" h-full w-full  object-center " src={shop.logo} alt="" />
                 </a>
             </div>
         </div>
