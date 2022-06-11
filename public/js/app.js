@@ -5749,7 +5749,6 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
 var MainCard = function MainCard(props) {
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(JSON.parse(props.products)),
       _useState2 = _slicedToArray(_useState, 2),
@@ -5766,6 +5765,11 @@ var MainCard = function MainCard(props) {
       route = _useState6[0],
       setRoute = _useState6[1];
 
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+      _useState8 = _slicedToArray(_useState7, 2),
+      bigImage = _useState8[0],
+      setBigImage = _useState8[1];
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     className: "bg-setBlue-100 flex flex-col items-center p-[20px] rounded relative f-full",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
@@ -5779,22 +5783,22 @@ var MainCard = function MainCard(props) {
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "flex flex-col items-center w-full mb-5",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-          href: route + products[0].id,
+          href: route + products[bigImage].id,
           className: "h-[20rem] w-[20rem] lg:h-[540px] lg:w-[540px] overflow-hidden rounded bg-black first-card",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: "w-full h-full bg-cover bg-center bg-no-repeat",
             style: {
-              backgroundImage: "url(" + products[0].picture + ")"
+              backgroundImage: "url(" + products[bigImage].picture + ")"
             }
           })
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
           className: "hidden lg:block font-bold font-source uppercase text-setGray-100 text-3xl text-center mt-3",
-          children: products[0].name.replace(/[_]/gi, ' ')
+          children: products[bigImage].name.replace(/[_]/gi, ' ')
         })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
         className: "w-full flex flex-wrap justify-evenly",
         children: products.map(function (product, index) {
-          return index > 0 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+          return index != bigImage && index < 5 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
             href: route + product.id,
             className: "h-[20rem] w-[20rem] lg:h-[250px] lg:w-[250px] overflow-hidden rounded bg-black other-card relative mb-5 lg:mb-0",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
