@@ -42,6 +42,7 @@ class DatabaseSeeder extends Seeder
             'user_id' => $user->id,
             'name' => 'La_tienda_de_Michi',
             'logo' => 'https://i.postimg.cc/jLwhqwSB/crocs.png',
+            'banner' => 'https://images.unsplash.com/photo-1603145733190-59811e523c72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y3JvY3N8ZW58MHx8MHx8&w=1000&q=80',
         ]);
 
         // $shop2 = Shop::factory()->create([

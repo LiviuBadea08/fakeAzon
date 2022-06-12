@@ -22,7 +22,7 @@ const Navbar = () => {
                             <li className="  border-b-4 border-setBlue-300 hover:border-setOrange">
                                 <a href="/shops" className="pb-[1.25rem] pt-4 px-4 flex items-center">
                                     <p className="text-setGray-100 text-2xl">
-                                        marcas
+                                        tiendas
                                     </p>
                                 </a>
                             </li>

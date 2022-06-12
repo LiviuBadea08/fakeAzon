@@ -5394,6 +5394,10 @@ __webpack_require__(/*! ./components/nav/Search */ "./resources/js/components/na
 
 __webpack_require__(/*! ./components/MainCard */ "./resources/js/components/MainCard.jsx");
 
+__webpack_require__(/*! ./components/shop/Banner */ "./resources/js/components/shop/Banner.jsx");
+
+__webpack_require__(/*! ./components/shop/Products */ "./resources/js/components/shop/Products.jsx");
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
@@ -5886,7 +5890,7 @@ var Navbar = function Navbar() {
                 className: "pb-[1.25rem] pt-4 px-4 flex items-center",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
                   className: "text-setGray-100 text-2xl",
-                  children: "marcas"
+                  children: "tiendas"
                 })
               })
             })]
@@ -5964,6 +5968,201 @@ var Search = function Search() {
 
 if (document.getElementById("search")) {
   react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Search, {}), document.getElementById("search"));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/shop/Banner.jsx":
+/*!*************************************************!*\
+  !*** ./resources/js/components/shop/Banner.jsx ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+var Banner = function Banner(props) {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(JSON.parse(props.data)),
+      _useState2 = _slicedToArray(_useState, 2),
+      shop = _useState2[0],
+      setShop = _useState2[1];
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.Fragment, {
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "bg-setBlue-200 flex justify-center items-center h-[70px]",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+        className: "text-setGray-100 text-center font-bold font-source uppercase text-3xl",
+        children: shop.name.replace(/[_]/gi, ' ')
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+      className: "overflow-hidden relative h-48 sm:h-64 xl:h-80 2xl:h-96 flex justify-center items-center",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        className: "w-32 h-32 sm:w-48 sm:h-48 lg:w-[250px] lg:h-[250px] rounded-full shadow-lg mx-auto bg-setGray-100 z-10 overflow-hidden flex items-center",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("img", {
+          src: shop.logo,
+          className: "w-full"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+        style: {
+          backgroundImage: "url(" + shop.banner + ")"
+        },
+        className: "slide"
+      })]
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Banner);
+
+if (document.getElementById("banner")) {
+  var data = document.getElementById('banner').getAttribute('data');
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Banner, {
+    data: data
+  }), document.getElementById("banner"));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/shop/Products.jsx":
+/*!***************************************************!*\
+  !*** ./resources/js/components/shop/Products.jsx ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+var Products = function Products(props) {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(JSON.parse(props.products)),
+      _useState2 = _slicedToArray(_useState, 2),
+      products = _useState2[0],
+      setProducts = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(JSON.parse(props.categories)),
+      _useState4 = _slicedToArray(_useState3, 2),
+      categories = _useState4[0],
+      setCategories = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("/products/"),
+      _useState6 = _slicedToArray(_useState5, 2),
+      route = _useState6[0],
+      setRoute = _useState6[1];
+
+  var showAll = function showAll() {
+    setProducts(JSON.parse(props.products));
+  };
+
+  var showCategory = function showCategory() {
+    console.log('hola');
+  };
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    className: "bg-setBlue-100 flex flex-col justify-center",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "mt-3 sm:max-w-7xl overflow-x-auto",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
+        className: "flex pr-5 pl-5",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+          className: "border-b-[7px] border-setBlue-100 hover:border-setOrange",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+            onClick: showAll,
+            className: "pb-[1.25rem] pt-4 px-4 flex items-center",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+              className: "text-setGray-100 text-2xl uppercase font-bold font-source",
+              children: "todos"
+            })
+          })
+        }), categories.map(function (category, index) {
+          return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
+            className: "border-b-[7px] border-setBlue-100 hover:border-setOrange",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
+              onClick: showCategory,
+              className: "pb-[1.25rem] pt-4 px-4 flex items-center",
+              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
+                className: "text-setGray-100 text-2xl uppercase font-bold font-source",
+                children: category.name
+              })
+            })
+          }, index);
+        })]
+      })
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      className: "flex flex-wrap justify-evenly py-5 sm:max-w-7xl",
+      children: products.map(function (product, index) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+          href: route + product.id,
+          className: "h-[20rem] w-[20rem] lg:h-[350px] lg:w-[350px] overflow-hidden rounded bg-black other-card relative mb-5 lg:mb-0",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "w-full h-full bg-cover bg-center bg-no-repeat",
+            style: {
+              backgroundImage: "url(" + product.picture + ")"
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+              className: "font-bold font-source text-setGray-100 text-xl",
+              children: product.name.replace(/[_]/gi, ' ')
+            })
+          })]
+        }, index);
+      })
+    })]
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Products);
+
+if (document.getElementById("products")) {
+  var products = document.getElementById('products').getAttribute('products');
+  var categories = document.getElementById('products').getAttribute('categories');
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Products, {
+    products: products,
+    categories: categories
+  }), document.getElementById("products"));
 }
 
 /***/ }),
@@ -11012,7 +11211,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".first-card{\r\n    transition: all 400ms ease;\r\n}\r\n.first-card div{\r\n    transition: all 400ms ease;\r\n}\r\n\r\n.first-card:hover{\r\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\r\n    transform: translateY(-3%);\r\n}\r\n.first-card:hover div{\r\n    transform: scale(1.1);\r\n}\r\n\r\n.other-card{\r\n    transition: all 400ms ease;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n\r\n.other-card:hover{\r\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\r\n    transform: translateY(-3%);\r\n}\r\n\r\n.other-card div:first-child{\r\n    transition: all 400ms ease;\r\n    position: absolute;\r\n}\r\n\r\n.other-card:hover div:first-child{\r\n    transform: scale(1.1);\r\n}\r\n\r\n.other-card div:nth-child(2){\r\n    text-transform: uppercase;\r\n    position:absolute;\r\n    width: 100%;\r\n    height: 25%;\r\n    background: rgba(1, 7, 8, 0.7);\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    transition: all 400ms ease;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.other-card:hover div:nth-child(2){\r\n    opacity: 1;\r\n    visibility: visible;\r\n    \r\n}\r\n\r\n.other-card:hover div:nth-child(2) h3{\r\n    text-align: center;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".first-card{\r\n    transition: all 400ms ease;\r\n}\r\n.first-card div{\r\n    transition: all 400ms ease;\r\n}\r\n\r\n.first-card:hover{\r\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\r\n    transform: translateY(-3%);\r\n}\r\n.first-card:hover div{\r\n    transform: scale(1.1);\r\n}\r\n\r\n.other-card{\r\n    transition: all 400ms ease;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n\r\n.other-card:hover{\r\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\r\n    transform: translateY(-3%);\r\n}\r\n\r\n.other-card div:first-child{\r\n    transition: all 400ms ease;\r\n    position: absolute;\r\n}\r\n\r\n.other-card:hover div:first-child{\r\n    transform: scale(1.1);\r\n}\r\n\r\n.other-card div:nth-child(2){\r\n    text-transform: uppercase;\r\n    position:absolute;\r\n    width: 100%;\r\n    height: 25%;\r\n    background: rgba(1, 7, 8, 0.7);\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    transition: all 400ms ease;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.other-card:hover div:nth-child(2){\r\n    opacity: 1;\r\n    visibility: visible;\r\n    \r\n}\r\n\r\n.other-card:hover div:nth-child(2) h3{\r\n    text-align: center;\r\n}\r\n.slide{\r\n    width:100%; \r\n    height:100%;\r\n\r\n    position: absolute;\r\n    background-size: cover;\r\n    background-repeat: no-repeat;\r\n    background-attachment: absolute;\r\n    background-position: center;\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
