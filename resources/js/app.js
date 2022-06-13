@@ -24,7 +24,8 @@ require ('./components/Navbar');
 
 require ('./components/nav/Search');
 
-require ('./components/MainCard');
+require ('./components/home/MainCard');
+require ('./components/home/SecondCard');
 
 require('./components/shop/Banner');
 require('./components/shop/Products');

@@ -10,7 +10,6 @@ const MainCard = (props) => {
 
   useEffect(() => {
     const interval = setTimeout(() => {
-        console.log('se esta repitiendo');
         if (!isHover) {
             switch(bigImage < 4){
                 case true: 
