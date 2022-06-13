@@ -21106,6 +21106,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-32 {
   height: 8rem;
 }
+.h-1\/4 {
+  height: 25%;
+}
+.h-1\/2 {
+  height: 50%;
+}
 .w-2\/12 {
   width: 16.666667%;
 }
@@ -21132,6 +21138,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-32 {
   width: 8rem;
+}
+.w-8\/12 {
+  width: 66.666667%;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -21188,6 +21200,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .self-center {
   align-self: center;
+}
+.justify-self-center {
+  justify-self: center;
 }
 .overflow-hidden {
   overflow: hidden;
@@ -21255,6 +21270,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(35 47 62 / var(--tw-bg-opacity));
 }
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
 }
@@ -21279,6 +21302,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .p-0 {
   padding: 0px;
+}
+.p-9 {
+  padding: 2.25rem;
+}
+.p-16 {
+  padding: 4rem;
 }
 .py-4 {
   padding-top: 1rem;
@@ -21350,11 +21379,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-\[40px\] {
+  font-size: 40px;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
 .font-bold {
   font-weight: 700;
 }
 .font-black {
   font-weight: 900;
+}
+.font-normal {
+  font-weight: 400;
 }
 .uppercase {
   text-transform: uppercase;

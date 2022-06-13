@@ -21,8 +21,8 @@ Route::get('landing', function () {
     return view('landingpage');
 });
 
-Route::get('proshow', function () {
-    return view('show');
+Route::get('productshow', function () {
+    return view('showdescription');
 });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
