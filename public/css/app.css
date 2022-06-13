@@ -21028,6 +21028,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-1 {
   margin-right: 0.25rem;
 }
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -21039,9 +21042,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .mr-4 {
   margin-right: 1rem;
-}
-.mb-1 {
-  margin-bottom: 0.25rem;
 }
 .mb-5 {
   margin-bottom: 1.25rem;
@@ -21073,6 +21073,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-full {
   height: 100%;
 }
+.h-16 {
+  height: 4rem;
+}
+.h-3 {
+  height: 0.75rem;
+}
 .h-80 {
   height: 20rem;
 }
@@ -21087,12 +21093,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-10 {
   height: 2.5rem;
-}
-.h-16 {
-  height: 4rem;
-}
-.h-3 {
-  height: 0.75rem;
 }
 .h-\[20rem\] {
   height: 20rem;
@@ -21109,6 +21109,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-2\/12 {
   width: 16.666667%;
 }
+.w-52 {
+  width: 13rem;
+}
+.w-full {
+  width: 100%;
+}
 .w-96 {
   width: 24rem;
 }
@@ -21117,12 +21123,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-80 {
   width: 20rem;
-}
-.w-full {
-  width: 100%;
-}
-.w-52 {
-  width: 13rem;
 }
 .w-\[20rem\] {
   width: 20rem;
@@ -21201,11 +21201,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-\[40px\] {
   border-radius: 40px;
 }
-.rounded-sm {
-  border-radius: 0.125rem;
-}
 .rounded-xl {
   border-radius: 0.75rem;
+}
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 .rounded {
   border-radius: 0.25rem;
@@ -21334,13 +21334,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-sm {
   font-size: 0.875rem;

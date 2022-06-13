@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 
-export const Buttons1 = () => {
+export const Btn1 = () => {
     return (
 
         
@@ -21,7 +21,7 @@ export const Buttons1 = () => {
 
             );
         }
-export const Buttons2 = () => {
+export const Btn2 = () => {
     return (
             
 
@@ -36,7 +36,7 @@ export const Buttons2 = () => {
 
             );
         }
-export const Buttons3 = () => {
+export const Btn3 = () => {
     return (
 
 
@@ -57,7 +57,7 @@ export const Buttons3 = () => {
 
                 );
             }
-export const Buttons4 = () => {
+export const Btn4 = () => {
     return (
 
 
