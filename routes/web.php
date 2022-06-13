@@ -21,6 +21,10 @@ Route::get('landing', function () {
     return view('landingpage');
 });
 
+Route::get('proshow', function () {
+    return view('show');
+});
+
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::resource('shops', ShopController::class);
