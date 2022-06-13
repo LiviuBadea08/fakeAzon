@@ -6,10 +6,10 @@ const Label = () => {
     <div>
 
 
-        <a href="">
+        <a href="" class="hover:text-setOrange">
         <div class="flex flex-row bg-setBlue-100 text-setGray-100 h-14 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ">
 
-            <div class=" bg-setGray-200 hover:bg-setOrange w-2/12 h-full mr-1 ">
+            <div class=" bg-setGray-100 hover:bg-setOrange w-2/12 h-full mr-1 ">
                 
             </div>
 
@@ -27,7 +27,7 @@ const Label = () => {
                 <a href="">
         <div class="flex flex-col-reverse bg-setBlue-100 text-white h-16 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ">
 
-            <div class=" bg-setGray-200 hover:bg-setOrange w-full h-3 mr-1 ">
+            <div class=" bg-setGray-100 hover:bg-setOrange w-full h-3 mr-1 ">
                 
             </div>
 
