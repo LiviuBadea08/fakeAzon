@@ -5774,6 +5774,32 @@ var MainCard = function MainCard(props) {
       bigImage = _useState8[0],
       setBigImage = _useState8[1];
 
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState10 = _slicedToArray(_useState9, 2),
+      isHover = _useState10[0],
+      setIsHover = _useState10[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var interval = setTimeout(function () {
+      console.log('se esta repitiendo');
+
+      if (!isHover) {
+        switch (bigImage < 4) {
+          case true:
+            setBigImage(bigImage + 1);
+            break;
+
+          default:
+            setBigImage(0);
+            clearTimeout(interval);
+            break;
+        }
+      }
+    }, 5000);
+    return function () {
+      return clearTimeout(interval);
+    };
+  }, [isHover, bigImage]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     className: "bg-setBlue-100 flex flex-col items-center p-[20px] rounded relative f-full",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
@@ -5788,6 +5814,12 @@ var MainCard = function MainCard(props) {
         className: "flex flex-col items-center w-full mb-5",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
           href: route + products[bigImage].id,
+          onMouseOver: function onMouseOver() {
+            return setIsHover(true);
+          },
+          onMouseOut: function onMouseOut() {
+            return setIsHover(false);
+          },
           className: "h-[20rem] w-[20rem] lg:h-[540px] lg:w-[540px] overflow-hidden rounded bg-black first-card",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: "w-full h-full bg-cover bg-center bg-no-repeat",
@@ -5804,6 +5836,12 @@ var MainCard = function MainCard(props) {
         children: products.map(function (product, index) {
           return index != bigImage && index < 5 ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
             href: route + product.id,
+            onMouseOver: function onMouseOver() {
+              return setIsHover(true);
+            },
+            onMouseOut: function onMouseOut() {
+              return setIsHover(false);
+            },
             className: "h-[20rem] w-[20rem] lg:h-[250px] lg:w-[250px] overflow-hidden rounded bg-black other-card relative mb-5 lg:mb-0",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
               className: "w-full h-full bg-cover bg-center bg-no-repeat",
@@ -6093,20 +6131,35 @@ var Products = function Products(props) {
       route = _useState6[0],
       setRoute = _useState6[1];
 
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+      _useState8 = _slicedToArray(_useState7, 2),
+      didSelectCategory = _useState8[0],
+      setDidSelectCategory = _useState8[1];
+
+  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]),
+      _useState10 = _slicedToArray(_useState9, 2),
+      selectedProducts = _useState10[0],
+      setSelectedProducts = _useState10[1];
+
   var showAll = function showAll() {
     setProducts(JSON.parse(props.products));
+    setDidSelectCategory(false);
   };
 
-  var showCategory = function showCategory() {
-    console.log('hola');
+  var showCategory = function showCategory(id) {
+    setDidSelectCategory(true);
+    var array = products.filter(function (product) {
+      return product.category_id === id;
+    });
+    setSelectedProducts(array);
   };
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     className: "bg-setBlue-100 flex flex-col justify-center",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: "mt-3 sm:max-w-7xl overflow-x-auto",
+      className: "mt-3 sm:max-w-7xl c",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
-        className: "flex pr-5 pl-5",
+        className: "flex pr-5 pl-5 overflow-x-auto",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
           className: "border-b-[7px] border-setBlue-100 hover:border-setOrange",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
@@ -6121,7 +6174,9 @@ var Products = function Products(props) {
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
             className: "border-b-[7px] border-setBlue-100 hover:border-setOrange",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("button", {
-              onClick: showCategory,
+              onClick: function onClick() {
+                return showCategory(category.id);
+              },
               className: "pb-[1.25rem] pt-4 px-4 flex items-center",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
                 className: "text-setGray-100 text-2xl uppercase font-bold font-source",
@@ -6133,7 +6188,23 @@ var Products = function Products(props) {
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
       className: "flex flex-wrap justify-evenly py-5 sm:max-w-7xl",
-      children: products.map(function (product, index) {
+      children: didSelectCategory ? selectedProducts.map(function (product, index) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
+          href: route + product.id,
+          className: "h-[20rem] w-[20rem] lg:h-[350px] lg:w-[350px] overflow-hidden rounded bg-black other-card relative mb-5 lg:mb-0",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            className: "w-full h-full bg-cover bg-center bg-no-repeat",
+            style: {
+              backgroundImage: "url(" + product.picture + ")"
+            }
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h3", {
+              className: "font-bold font-source text-setGray-100 text-xl",
+              children: product.name.replace(/[_]/gi, ' ')
+            })
+          })]
+        }, index);
+      }) : products.map(function (product, index) {
         return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("a", {
           href: route + product.id,
           className: "h-[20rem] w-[20rem] lg:h-[350px] lg:w-[350px] overflow-hidden rounded bg-black other-card relative mb-5 lg:mb-0",
