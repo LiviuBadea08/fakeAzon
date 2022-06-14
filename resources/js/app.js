@@ -12,25 +12,27 @@ require('../css/card.css');
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-require('./components/Buttons');
 
-require('./components/Card');
+// home
+require('./components/home/MainCard');
+require('./components/home/SecondCard')
 
-require('./components/Example');
+// nav 
+require ('./components/nav/Navbar');
+require('./components/nav/Search');
+require ('./components/nav/Footer');
 
-require ('./components/Footer');
-
-require ('./components/Navbar');
-
-require ('./components/nav/Search');
-
-require ('./components/MainCard');
-
-/* require('./components/products/Showproduct'); */
-require('./components/products/ProductShow');
-
-
+// shop 
 require('./components/shop/Banner');
 require('./components/shop/Products');
+require('./components/shop/ShopCard');
 
+// form 
 require('./components/form/Login');
+
+// products
+require('./components/products/ProductShow');
+
+// extra 
+require('./components/Buttons');
+require('./components/Label');

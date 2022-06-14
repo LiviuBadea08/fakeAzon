@@ -2,11 +2,6 @@
 
 @section('content')
     @foreach ($shops as $shop)
-        <div id="card" data={{$shop}}></div>
+        <div id="shop-card" data={{$shop}}></div>
     @endforeach
-    
-
-    <div id="showproduct"></div>   dsa 
-    
-
 @endsection

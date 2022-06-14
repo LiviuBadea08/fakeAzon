@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
-import { useState } from "react";
 
-const Card = (props) => {
+const ShopCard = (props) => {
     const [shop, setShop] = useState(JSON.parse(props.data));
     const [route, setRoute] = useState("shops/" + shop.id);
 
     return (
         <div className="flex flex-col  bg-setBlue-100 w-96 h-80  rounded-sm shadow-md">
             <div className="flex max-w-full h-1/5 items-center place-content-center">
-                {/* icono */}
+                {/* icono  */}
                 <div className=" bg-setOrange start w-4 h-4 "></div>
 
                 <a className="text-setGray-100  text-4xl font-source font-black" href={route}>
@@ -26,9 +25,9 @@ const Card = (props) => {
     );
 };
 
-export default Card;
+export default ShopCard;
 
-if (document.getElementById("card")) {
-    let data = document.getElementById('card').getAttribute('data');
-    ReactDOM.render(<Card data={data} />, document.getElementById("card"));
+if (document.getElementById("shop-card")) {
+    let data = document.getElementById('shop-card').getAttribute('data');
+    ReactDOM.render(<ShopCard data={data} />, document.getElementById("shop-card"));
 }
