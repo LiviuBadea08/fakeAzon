@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import { useState } from "react";
 
 const Card = (props) => {
     const [shop, setShop] = useState(JSON.parse(props.data));
     const [route, setRoute] = useState("shops/" + shop.id);
-    console.log(shop);
+
     return (
         <div className="flex flex-col  bg-setBlue-100 w-96 h-80  rounded-sm shadow-md">
             <div className="flex max-w-full h-1/5 items-center place-content-center">

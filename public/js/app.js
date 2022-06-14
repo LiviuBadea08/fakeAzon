@@ -5561,7 +5561,6 @@ var Card = function Card(props) {
       route = _useState4[0],
       setRoute = _useState4[1];
 
-  console.log(shop);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
     className: "flex flex-col  bg-setBlue-100 w-96 h-80  rounded-sm shadow-md",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
@@ -5831,9 +5830,12 @@ var MainCard = function MainCard(props) {
     className: "bg-setBlue-100 flex flex-col items-center p-[20px] rounded relative f-full",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
       className: "flex justify-center w-full mb-5 mt-3",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
-        className: "font-bold font-source uppercase text-setGray-100 text-center text-3xl lg:text-5xl",
-        children: name
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+        href: 'shops/' + props.shopId,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("h1", {
+          className: "font-bold font-source uppercase text-setGray-100 text-center text-3xl lg:text-5xl",
+          children: name
+        })
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
       className: "flex flex-col lg:flex-row justify-around w-full lg:flex-nowrap mt-3 mb-3",
@@ -5893,9 +5895,11 @@ var MainCard = function MainCard(props) {
 if (document.getElementById("main-card")) {
   var products = document.getElementById('main-card').getAttribute('products');
   var name = document.getElementById('main-card').getAttribute('name');
+  var id = document.getElementById('main-card').getAttribute('shopId');
   react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(MainCard, {
     products: products,
-    name: name
+    name: name,
+    shopId: id
   }), document.getElementById("main-card"));
 }
 

@@ -8,6 +8,8 @@ const MainCard = (props) => {
   const [bigImage, setBigImage] = useState(0);
   const [isHover, setIsHover] = useState(false);
 
+  
+
   useEffect(() => {
     const interval = setTimeout(() => {
         console.log('se esta repitiendo');
@@ -31,7 +33,7 @@ const MainCard = (props) => {
   return (
     <div className='bg-setBlue-100 flex flex-col items-center p-[20px] rounded relative f-full'>
       <div className='flex justify-center w-full mb-5 mt-3'>
-        <h1 className='font-bold font-source uppercase text-setGray-100 text-center text-3xl lg:text-5xl'>{name}</h1>
+        <a href={'shops/' + props.shopId}><h1 className='font-bold font-source uppercase text-setGray-100 text-center text-3xl lg:text-5xl'>{name}</h1></a>
       </div>
 
       <div className='flex flex-col lg:flex-row justify-around w-full lg:flex-nowrap mt-3 mb-3'>
@@ -65,5 +67,6 @@ export default MainCard
 if (document.getElementById("main-card")) {
     let products = document.getElementById('main-card').getAttribute('products');
     let name = document.getElementById('main-card').getAttribute('name');
-    ReactDOM.render(<MainCard products={products} name={name} />, document.getElementById("main-card"));
+    let id = document.getElementById('main-card').getAttribute('shopId');
+    ReactDOM.render(<MainCard products={products} name={name} shopId={id} />, document.getElementById("main-card"));
 }
