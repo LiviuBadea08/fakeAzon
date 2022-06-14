@@ -20,14 +20,17 @@ require('./components/Example');
 
 require ('./components/Footer');
 
-require ('./components/Label');
-
 require ('./components/Navbar');
 
 require ('./components/nav/Search');
 
-require ('./components/home/MainCard');
-require ('./components/home/SecondCard');
+require ('./components/MainCard');
+
+/* require('./components/products/Showproduct'); */
+require('./components/products/ProductShow');
+
 
 require('./components/shop/Banner');
 require('./components/shop/Products');
+
+require('./components/form/Login');
