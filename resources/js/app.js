@@ -31,3 +31,5 @@ require ('./components/home/SecondCard');
 
 require('./components/shop/Banner');
 require('./components/shop/Products');
+
+require('./components/form/Login');
