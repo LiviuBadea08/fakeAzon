@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import ReactDOM from 'react-dom';
 import  { Btn2 } from "../Buttons"
 
@@ -22,3 +22,7 @@ if (document.getElementById('showproduct')) {
     ReactDOM.render(<Showproduct />, document.getElementById('showproduct'));
 }
 
+ */
+
+
+/* Eliminar? */

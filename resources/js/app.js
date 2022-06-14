@@ -26,7 +26,7 @@ require ('./components/nav/Search');
 
 require ('./components/MainCard');
 
-require('./components/products/Showproduct');
+/* require('./components/products/Showproduct'); */
 require('./components/products/ProductShow');
 
 
