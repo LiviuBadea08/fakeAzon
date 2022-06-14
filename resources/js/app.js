@@ -32,3 +32,5 @@ require('./components/products/ProductShow');
 
 require('./components/shop/Banner');
 require('./components/shop/Products');
+
+require('./components/form/Login');
