@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 
 export const Btn1 = () => {
     return (
@@ -25,7 +25,7 @@ export const Btn2 = () => {
     return (
             
 
-            <a class=" " href="landing">
+            <a class=" " href="/landing">
                 <div class="flex flex-row items-center font-bold text-setGray-100 bg-setOrange h-14 max-w-lg rounded-[40px] overflow-hidden text-3xl font-source shadow-md  ">
 
                     welcome.blade 'landing'
@@ -81,6 +81,6 @@ export const Btn4 = () => {
 }
 
 
-if (document.getElementById('buttons')) {
-    ReactDOM.render(<Buttons />, document.getElementById('buttons'));
-}
+// if (document.getElementById('buttons')) {
+//     ReactDOM.render(<Buttons />, document.getElementById('buttons'));
+// }

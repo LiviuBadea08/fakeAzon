@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import { Buttons } from "../Buttons.jsx"
+import  { Btn2 } from "../Buttons"
 
 const Showproduct = () => {
     return (
     <div>
-        {/* <Btn2>dsads</Btn2>dsa */}dssd
-        <Buttons/>dsas
+        
+        <Btn2/>
+        <br />
+        <Btn2/>
+    
     </div>
 
 

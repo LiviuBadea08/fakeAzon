@@ -21017,6 +21017,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .m-0 {
   margin: 0px;
 }
+.m-7 {
+  margin: 1.75rem;
+}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -21067,11 +21070,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-screen {
   height: 100vh;
 }
-.h-14 {
-  height: 3.5rem;
-}
 .h-full {
   height: 100%;
+}
+.h-14 {
+  height: 3.5rem;
 }
 .h-16 {
   height: 4rem;
@@ -21106,20 +21109,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-32 {
   height: 8rem;
 }
-.h-1\/4 {
-  height: 25%;
-}
-.h-1\/2 {
-  height: 50%;
+.w-full {
+  width: 100%;
 }
 .w-2\/12 {
   width: 16.666667%;
 }
 .w-52 {
   width: 13rem;
-}
-.w-full {
-  width: 100%;
 }
 .w-96 {
   width: 24rem;
@@ -21138,12 +21135,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-32 {
   width: 8rem;
-}
-.w-8\/12 {
-  width: 66.666667%;
-}
-.w-1\/2 {
-  width: 50%;
 }
 .max-w-sm {
   max-width: 24rem;
@@ -21201,9 +21192,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .self-center {
   align-self: center;
 }
-.justify-self-center {
-  justify-self: center;
-}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -21246,6 +21234,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(28 31 38 / var(--tw-bg-opacity));
 }
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+}
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
 .bg-setBlue-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(85 101 115 / var(--tw-bg-opacity));
@@ -21270,14 +21266,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(35 47 62 / var(--tw-bg-opacity));
 }
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
 .bg-cover {
   background-size: cover;
 }
@@ -21291,6 +21279,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   -o-object-position: center;
      object-position: center;
 }
+.p-16 {
+  padding: 4rem;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -21303,11 +21294,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .p-0 {
   padding: 0px;
 }
-.p-9 {
-  padding: 2.25rem;
-}
-.p-16 {
-  padding: 4rem;
+.p-5 {
+  padding: 1.25rem;
 }
 .py-4 {
   padding-top: 1rem;
@@ -21359,13 +21347,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 3.75rem;
   line-height: 1;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.text-\[40px\] {
+  font-size: 40px;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -21379,21 +21374,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-\[40px\] {
-  font-size: 40px;
-}
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-.font-bold {
-  font-weight: 700;
-}
 .font-black {
   font-weight: 900;
 }
 .font-normal {
   font-weight: 400;
+}
+.font-bold {
+  font-weight: 700;
 }
 .uppercase {
   text-transform: uppercase;
@@ -21405,13 +21393,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(255 160 45 / var(--tw-text-opacity));
 }
-.text-setGray-100 {
-  --tw-text-opacity: 1;
-  color: rgb(242 242 242 / var(--tw-text-opacity));
-}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-setGray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(242 242 242 / var(--tw-text-opacity));
 }
 .text-setGray-200 {
   --tw-text-opacity: 1;

@@ -5387,8 +5387,6 @@ __webpack_require__(/*! ./components/Card */ "./resources/js/components/Card.jsx
 __webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
 
 __webpack_require__(/*! ./components/Footer */ "./resources/js/components/Footer.jsx");
-/* require ('./components/Label'); */
-
 
 __webpack_require__(/*! ./components/Navbar */ "./resources/js/components/Navbar.jsx");
 
@@ -5397,6 +5395,8 @@ __webpack_require__(/*! ./components/nav/Search */ "./resources/js/components/na
 __webpack_require__(/*! ./components/MainCard */ "./resources/js/components/MainCard.jsx");
 
 __webpack_require__(/*! ./components/products/Showproduct */ "./resources/js/components/products/Showproduct.jsx");
+
+__webpack_require__(/*! ./components/products/ProductShow */ "./resources/js/components/products/ProductShow.jsx");
 
 __webpack_require__(/*! ./components/shop/Banner */ "./resources/js/components/shop/Banner.jsx");
 
@@ -5455,43 +5455,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Btn4": () => (/* binding */ Btn4)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+ // import ReactDOM from 'react-dom';
 
 
 
 var Btn1 = function Btn1() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
     "class": "",
     href: "/",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       "class": "flex self-center items-center flex-row bg-setBlue-100 text-setGray-100 hover:text-setOrange font-bold  h-14 max-w-sm rounded-[15px] overflow-hidden text-3xl font-source shadow-md  ",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
         "class": " bg-setOrange w-2/12 h-full mr-1 "
       }), "index.blade '/'"]
     })
   });
 };
 var Btn2 = function Btn2() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
     "class": " ",
-    href: "landing",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+    href: "/landing",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
       "class": "flex flex-row items-center font-bold text-setGray-100 bg-setOrange h-14 max-w-lg rounded-[40px] overflow-hidden text-3xl font-source shadow-md  ",
       children: "welcome.blade 'landing'"
     })
   });
 };
 var Btn3 = function Btn3() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
     href: "",
     "class": "hover:text-setOrange",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       "class": "flex flex-row bg-setBlue-100 text-setGray-100 h-14 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
         "class": " bg-setGray-100 hover:bg-setOrange w-2/12 h-full mr-1 "
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
         "class": "flex self-center text-2xl font-bold text-setGray-100 hover:text-setOrange ",
         children: "Label Figma"
       })]
@@ -5499,23 +5498,21 @@ var Btn3 = function Btn3() {
   });
 };
 var Btn4 = function Btn4() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
     href: "",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       "class": "flex flex-col-reverse bg-setBlue-100 text-white h-16 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
         "class": " bg-setGray-100 hover:bg-setOrange w-full h-3 mr-1 "
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
         "class": "flex place-self-center mb-1 text-2xl font-bold text-setGray-100 hover:text-setOrange ",
         children: "Label Figma"
       })]
     })
   });
-};
-
-if (document.getElementById('buttons')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Buttons, {}), document.getElementById('buttons'));
-}
+}; // if (document.getElementById('buttons')) {
+//     ReactDOM.render(<Buttons />, document.getElementById('buttons'));
+// }
 
 /***/ }),
 
@@ -6038,6 +6035,78 @@ if (document.getElementById("search")) {
 
 /***/ }),
 
+/***/ "./resources/js/components/products/ProductShow.jsx":
+/*!**********************************************************!*\
+  !*** ./resources/js/components/products/ProductShow.jsx ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var _Showproduct__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Showproduct */ "./resources/js/components/products/Showproduct.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+
+var ProductShow = function ProductShow() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    className: "bg-setBlue-100 flex flex-col items-center p-[20px] rounded relative f-full",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "flex flex-col lg:flex-row justify-around w-full lg:flex-nowrap mt-3 mb-3",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "flex flex-col items-center w-full mb-5",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {
+          href: "",
+          className: "h-[20rem] w-[20rem] lg:h-[540px] lg:w-[540px] overflow-hidden rounded bg-black first-card",
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+            className: "w-full h-full bg-cover bg-center bg-no-repeat",
+            style: {
+              backgroundImage: "url(" + ")"
+            }
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
+          className: "hidden lg:block font-bold font-source uppercase text-setGray-100 text-3xl text-center mt-3"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "w-full flex flex-wrap justify-evenly",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+          className: "flex flex-col items-center justify-center w-full mb-5 text-setGray-100 mt-3",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
+            className: "font-bold font-source uppercase  text-center text-3xl lg:text-5xl",
+            children: "Classic Sweater Supreme"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+            children: "A"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+            children: "B"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+            children: "C"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+            children: "D"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+            children: "E"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Showproduct__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+        })
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProductShow);
+
+if (document.getElementById('product-show')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(ProductShow, {}), document.getElementById('product-show'));
+}
+
+/***/ }),
+
 /***/ "./resources/js/components/products/Showproduct.jsx":
 /*!**********************************************************!*\
   !*** ./resources/js/components/products/Showproduct.jsx ***!
@@ -6051,7 +6120,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _Buttons_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Buttons.jsx */ "./resources/js/components/Buttons.jsx");
+/* harmony import */ var _Buttons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Buttons */ "./resources/js/components/Buttons.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
@@ -6061,7 +6130,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var Showproduct = function Showproduct() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-    children: ["dssd", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Buttons_jsx__WEBPACK_IMPORTED_MODULE_2__.Buttons, {}), "dsas"]
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn2, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn2, {})]
   });
 };
 
@@ -11345,7 +11414,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".first-card{\r\n    transition: all 400ms ease;\r\n}\r\n.first-card div{\r\n    transition: all 400ms ease;\r\n}\r\n\r\n.first-card:hover{\r\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\r\n    transform: translateY(-3%);\r\n}\r\n.first-card:hover div{\r\n    transform: scale(1.1);\r\n}\r\n\r\n.other-card{\r\n    transition: all 400ms ease;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n\r\n.other-card:hover{\r\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\r\n    transform: translateY(-3%);\r\n}\r\n\r\n.other-card div:first-child{\r\n    transition: all 400ms ease;\r\n    position: absolute;\r\n}\r\n\r\n.other-card:hover div:first-child{\r\n    transform: scale(1.1);\r\n}\r\n\r\n.other-card div:nth-child(2){\r\n    text-transform: uppercase;\r\n    position:absolute;\r\n    width: 100%;\r\n    height: 25%;\r\n    background: rgba(1, 7, 8, 0.7);\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    transition: all 400ms ease;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.other-card:hover div:nth-child(2){\r\n    opacity: 1;\r\n    visibility: visible;\r\n    \r\n}\r\n\r\n.other-card:hover div:nth-child(2) h3{\r\n    text-align: center;\r\n}\r\n.slide{\r\n    width:100%; \r\n    height:100%;\r\n\r\n    position: absolute;\r\n    background-size: cover;\r\n    background-repeat: no-repeat;\r\n    background-attachment: absolute;\r\n    background-position: center;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".first-card{\n    transition: all 400ms ease;\n}\n.first-card div{\n    transition: all 400ms ease;\n}\n\n.first-card:hover{\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\n    transform: translateY(-3%);\n}\n.first-card:hover div{\n    transform: scale(1.1);\n}\n\n.other-card{\n    transition: all 400ms ease;\n    display: flex;\n    align-items: flex-end;\n}\n\n.other-card:hover{\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\n    transform: translateY(-3%);\n}\n\n.other-card div:first-child{\n    transition: all 400ms ease;\n    position: absolute;\n}\n\n.other-card:hover div:first-child{\n    transform: scale(1.1);\n}\n\n.other-card div:nth-child(2){\n    text-transform: uppercase;\n    position:absolute;\n    width: 100%;\n    height: 25%;\n    background: rgba(1, 7, 8, 0.7);\n    opacity: 0;\n    visibility: hidden;\n    transition: all 400ms ease;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.other-card:hover div:nth-child(2){\n    opacity: 1;\n    visibility: visible;\n    \n}\n\n.other-card:hover div:nth-child(2) h3{\n    text-align: center;\n}\n.slide{\n    width:100%; \n    height:100%;\n\n    position: absolute;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-attachment: absolute;\n    background-position: center;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11369,7 +11438,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".nav{\r\n    display:flex;\r\n    justify-content:space-between;\r\n    flex-wrap: nowrap;\r\n}\r\n@media (max-width: 640px) {\r\n    .nav{\r\n        flex-wrap: wrap;\r\n    }\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".nav{\n    display:flex;\n    justify-content:space-between;\n    flex-wrap: nowrap;\n}\n@media (max-width: 640px) {\n    .nav{\n        flex-wrap: wrap;\n    }\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
