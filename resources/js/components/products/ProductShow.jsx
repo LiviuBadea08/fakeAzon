@@ -4,7 +4,7 @@ import Showproduct from './Showproduct'
 
 const ProductShow = () => {
     return (
-    <div className='bg-setBlue-100 flex flex-col items-center p-[20px] rounded relative f-full'>
+    <div className='bg-setBlue-100 font-source flex flex-col items-center p-[20px] rounded relative f-full'>
 
         <div className='flex flex-col lg:flex-row justify-around w-full lg:flex-nowrap mt-3 mb-3'>
 
@@ -16,15 +16,16 @@ const ProductShow = () => {
         </div>
 
         <div className='w-full flex flex-wrap justify-evenly'>
-        <div className='flex flex-col items-center justify-center w-full mb-5 text-setGray-100 mt-3'>
-            <h1 className='font-bold font-source uppercase  text-center text-3xl lg:text-5xl'>Classic Sweater Supreme{}</h1>
-            <p>A</p>
-            <p>B</p>
-            <p>C</p>
-            <p>D</p>
-            <p>E</p>
+        <div className='flex flex-col items-center justify-center w-full mb-5 space-y-10 text-setGray-100 font-black '>
+            <h1 className='text-center text-3xl lg:text-5xl'>Classic Sweater Supreme{}</h1>
+
+            <p>Suéter para caballeros de color negro marca Supreme de tela fina, diseñado por el famoso diseñador de modas francés Christian Dior en 1947, el diseño sigue fabricándose igual hasta el día de hoy sin alteraciones de otros diseñadores.</p>
+            <p>Precio: 1.000.00 €</p>
+            <p>Marca: Supreme.</p>
+            <p>Vendedor: Amancio Ortega.</p>
             
-            <Showproduct/>
+
+            <Showproduct className=""/>
 
             
         </div>

@@ -4,7 +4,7 @@ import  { Btn2 } from "../Buttons"
 
 const Showproduct = () => {
     return (
-    <div>
+    <div className="flex flex-col w-full justify-self-center items-center ">
         
         <Btn2/>
         <br />

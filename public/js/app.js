@@ -6058,7 +6058,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ProductShow = function ProductShow() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "bg-setBlue-100 flex flex-col items-center p-[20px] rounded relative f-full",
+    className: "bg-setBlue-100 font-source flex flex-col items-center p-[20px] rounded relative f-full",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
       className: "flex flex-col lg:flex-row justify-around w-full lg:flex-nowrap mt-3 mb-3",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
@@ -6078,21 +6078,21 @@ var ProductShow = function ProductShow() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
         className: "w-full flex flex-wrap justify-evenly",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
-          className: "flex flex-col items-center justify-center w-full mb-5 text-setGray-100 mt-3",
+          className: "flex flex-col items-center justify-center w-full mb-5 space-y-10 text-setGray-100 font-black ",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("h1", {
-            className: "font-bold font-source uppercase  text-center text-3xl lg:text-5xl",
+            className: "text-center text-3xl lg:text-5xl",
             children: "Classic Sweater Supreme"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-            children: "A"
+            children: "Su\xE9ter para caballeros de color negro marca Supreme de tela fina, dise\xF1ado por el famoso dise\xF1ador de modas franc\xE9s Christian Dior en 1947, el dise\xF1o sigue fabric\xE1ndose igual hasta el d\xEDa de hoy sin alteraciones de otros dise\xF1adores."
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-            children: "B"
+            children: "Precio: 1.000.00 \u20AC"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-            children: "C"
+            children: "Marca: Supreme."
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-            children: "D"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
-            children: "E"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Showproduct__WEBPACK_IMPORTED_MODULE_2__["default"], {})]
+            children: "Vendedor: Amancio Ortega."
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Showproduct__WEBPACK_IMPORTED_MODULE_2__["default"], {
+            className: ""
+          })]
         })
       })]
     })
@@ -6130,6 +6130,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var Showproduct = function Showproduct() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+    className: "flex flex-col w-full justify-self-center items-center ",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn2, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("br", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn2, {})]
   });
 };
