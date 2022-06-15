@@ -22,9 +22,12 @@ Route::get('landing', function () {
     return view('landingpage');
 });
 
-// Route::get('productshow', function () {
-//     return view('showdescription');
-// });
+Route::get('registeruser', function () {
+    return view('createuser');
+});
+Route::get('registershop', function () {
+    return view('createshop');
+});
 
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
