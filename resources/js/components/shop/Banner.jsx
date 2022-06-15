@@ -15,6 +15,8 @@ const Banner = (props) => {
             </div>
             <div style={{ backgroundImage: `url(`+shop.banner+`)` }} className="slide"></div>
         </div>
+
+        
     </>
   )
 }

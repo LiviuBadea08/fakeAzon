@@ -1,86 +1,90 @@
 import React from "react";
-// import ReactDOM from 'react-dom';
 
-export const Btn1 = () => {
+export const Btn1 = (props) => {
     return (
-
-        
-
-            <a class="" href="/">
-                <div class="flex self-center items-center flex-row bg-setBlue-100 text-setGray-100 hover:text-setOrange font-bold  h-14 max-w-sm rounded-[15px] overflow-hidden text-3xl font-source shadow-md  ">
-
-                    <div class=" bg-setOrange w-2/12 h-full mr-1 ">
-
-                    </div>
-
-                    index.blade '/'
-
-                </div>
-            </a>
-
-
-            );
-        }
-export const Btn2 = () => {
-    return (
-            
-
-            <a class=" " href="/landing">
-                <div class="flex flex-row items-center font-bold text-setGray-100 bg-setOrange h-14 max-w-lg rounded-[40px] overflow-hidden text-3xl font-source shadow-md  ">
-
-                    welcome.blade 'landing'
-
-
-                </div>
-            </a>
-
-            );
-        }
-export const Btn3 = () => {
-    return (
-
-
-                <a href="" class="hover:text-setOrange">
-                    <div class="flex flex-row bg-setBlue-100 text-setGray-100 h-14 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ">
-
-                        <div class=" bg-setGray-100 hover:bg-setOrange w-2/12 h-full mr-1 ">
-
-                        </div>
-
-
-                        <div class="flex self-center text-2xl font-bold text-setGray-100 hover:text-setOrange ">
-                            Label Figma
-                        </div>
-
-                    </div>
-                </a>
-
-                );
-            }
-export const Btn4 = () => {
-    return (
-
-
-                <a href="">
-                    <div class="flex flex-col-reverse bg-setBlue-100 text-white h-16 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ">
-
-                        <div class=" bg-setGray-100 hover:bg-setOrange w-full h-3 mr-1 ">
-
-                        </div>
-
-
-                        <div class="flex place-self-center mb-1 text-2xl font-bold text-setGray-100 hover:text-setOrange ">
-                            Label Figma
-                        </div>
-
-                    </div>
-                </a>
-            
-            
+        <a className="" href={props.route}>
+            <div className="flex self-center items-center flex-row bg-setBlue-100 text-setGray-100 hover:text-setOrange font-bold  h-14 max-w-sm rounded-[15px] overflow-hidden text-3xl font-source shadow-md  ">
+                <div className=" bg-setOrange w-2/12 h-full mr-1 "></div>
+                {props.slot}
+            </div>
+        </a>
     );
-}
+};
+export const Btn2 = (props) => {
+    return (
+        <div className="flex items-center justify-center w-[637px]  bg-setOrange h-11 max-w-lg rounded-full text-3xl font-source shadow-md  ">
+            <p className="text-setGray-100 font-bold uppercase">{props.slot}</p>
+        </div>
+    );
+};
+export const Btn3 = (props) => {
+    return (
+        <div className="my-2 flex flex-row bg-setBlue-100 text-setGray-100 h-11 w-[400px] rounded-xl text-3xl font-source shadow-md  ">
+            <div className="bg-setOrange flex-none w-11 rounded-l-xl mr-5"></div>
 
+            <div className="flex self-center w-full flex-initial ">
+                <p className="text-2xl font-bold text-setGray-100 capitalize">{props.slot}</p>
+            </div>
+        </div>
+    );
+};
+export const Btn4 = (props) => {
+    return (
+        <a href={props.route}>
+            <div className="flex flex-col-reverse bg-setBlue-100 text-white h-16 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ">
+                <div className=" bg-setGray-100 hover:bg-setOrange w-full h-3 mr-1 "></div>
 
-// if (document.getElementById('buttons')) {
-//     ReactDOM.render(<Buttons />, document.getElementById('buttons'));
-// }
+                <div className="flex place-self-center mb-1 text-2xl font-bold text-setGray-100 hover:text-setOrange ">
+                    {props.slot}
+                </div>
+            </div>
+        </a>
+    );
+};
+export const Btn5 = (props) => {
+    return (
+        <a className="" href={props.route}>
+            <div className="flex flex-row bg-setBlue-100 hover:text-setOrange text-setGray-100 h-14 w-7/12 rounded-xl overflow-hidden text-2xl font-source shadow-md self-center items-center font-bold ">
+                <div className="bg-setOrange w-1/12 h-52 mr-6 "></div>
+                    {props.slot}
+            </div>
+        </a>
+    );
+};
+export const Btn6 = (props) => {
+    return (
+        <div className="bg-setGray-200 w-[400px] my-2 rounded">
+            <p className="text-1xl font-bold text-setGray-100 p-3">{props.slot}</p>
+        </div>
+    );
+};
+export const Btn7 = (props) => {
+    return (
+        <div className="flex items-center justify-center w-[400px] mt-4 bg-setOrange h-10 max-w-lg rounded-full text-3xl font-source shadow-md  ">
+            <p className="text-setGray-100 font-bold uppercase">{props.slot}</p>
+        </div>
+    );
+};
+export const CreditCard = () => {
+    return (
+    <div className="my-3 first-card">
+        <div className="text-gray-100 shadow-lg shadow-gray-300 w-full md:w-96 h-52 bg-gradient-to-br from-gray-800 to-gray-400 p-4 rounded relative max-w-[24rem]">
+        <p className="font-bold">Aditya Singh</p>
+        <p className="my-1 text-sm">
+            Frontend, Backend & <br />
+            Devops Engineer.
+        </p>
+        <p className="text-sm">xxxxxxxx@xxxxx.com</p>
+        <span className="text-lg font-extrabold absolute right-4 bottom-4">BRAND</span>
+        </div>
+    </div>
+    );
+};
+export const MinCardShop = (props) => {
+    return (
+        <div className="shadow-lg shadow-purple-200 p-4 w-full md:w-96 h-52 rounded  flex flex-col justify-center items-center mt-4 max-w-[24rem]" style={{ backgroundImage: `url(`+props.banner+`)` }}>
+            <img className="w-20 h-20 object-cover rounded-full mb-2 bg-setGray-100" src={props.logo} alt="logo" />
+            <p className="text-gray-100 font-semibold">{props.name}</p>
+        </div>
+    );
+};

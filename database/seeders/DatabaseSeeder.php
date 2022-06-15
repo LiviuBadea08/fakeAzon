@@ -34,6 +34,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Miguel',
             'email' => 'admin@gmail.com',
             'password' => Hash::make('12345'),
+            'address' => 'Address:_34_Carrer_Meer._This_apartment_is_set_on_the_second_floor_(without_elevator_access).',
         ]);
 
         $user->Rol()->attach($rol);

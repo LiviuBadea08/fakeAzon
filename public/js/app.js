@@ -5408,7 +5408,7 @@ __webpack_require__(/*! ./components/products/ProductShow */ "./resources/js/com
 
 __webpack_require__(/*! ./components/Buttons */ "./resources/js/components/Buttons.jsx");
 
-__webpack_require__(/*! ./components/Label */ "./resources/js/components/Label.jsx");
+__webpack_require__(/*! ./components/CardUser */ "./resources/js/components/CardUser.jsx");
 
 /***/ }),
 
@@ -5460,74 +5460,141 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "Btn1": () => (/* binding */ Btn1),
 /* harmony export */   "Btn2": () => (/* binding */ Btn2),
 /* harmony export */   "Btn3": () => (/* binding */ Btn3),
-/* harmony export */   "Btn4": () => (/* binding */ Btn4)
+/* harmony export */   "Btn4": () => (/* binding */ Btn4),
+/* harmony export */   "Btn5": () => (/* binding */ Btn5),
+/* harmony export */   "Btn6": () => (/* binding */ Btn6),
+/* harmony export */   "Btn7": () => (/* binding */ Btn7),
+/* harmony export */   "CreditCard": () => (/* binding */ CreditCard),
+/* harmony export */   "MinCardShop": () => (/* binding */ MinCardShop)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
- // import ReactDOM from 'react-dom';
 
 
 
-var Btn1 = function Btn1() {
+var Btn1 = function Btn1(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-    "class": "",
-    href: "/",
+    className: "",
+    href: props.route,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      "class": "flex self-center items-center flex-row bg-setBlue-100 text-setGray-100 hover:text-setOrange font-bold  h-14 max-w-sm rounded-[15px] overflow-hidden text-3xl font-source shadow-md  ",
+      className: "flex self-center items-center flex-row bg-setBlue-100 text-setGray-100 hover:text-setOrange font-bold  h-14 max-w-sm rounded-[15px] overflow-hidden text-3xl font-source shadow-md  ",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        "class": " bg-setOrange w-2/12 h-full mr-1 "
-      }), "index.blade '/'"]
+        className: " bg-setOrange w-2/12 h-full mr-1 "
+      }), props.slot]
     })
   });
 };
-var Btn2 = function Btn2() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-    "class": " ",
-    href: "/landing",
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      "class": "flex flex-row items-center font-bold text-setGray-100 bg-setOrange h-14 max-w-lg rounded-[40px] overflow-hidden text-3xl font-source shadow-md  ",
-      children: "welcome.blade 'landing'"
+var Btn2 = function Btn2(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "flex items-center justify-center w-[637px]  bg-setOrange h-11 max-w-lg rounded-full text-3xl font-source shadow-md  ",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      className: "text-setGray-100 font-bold uppercase",
+      children: props.slot
     })
   });
 };
-var Btn3 = function Btn3() {
+var Btn3 = function Btn3(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    className: "my-2 flex flex-row bg-setBlue-100 text-setGray-100 h-11 w-[400px] rounded-xl text-3xl font-source shadow-md  ",
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "bg-setOrange flex-none w-11 rounded-l-xl mr-5"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+      className: "flex self-center w-full flex-initial ",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+        className: "text-2xl font-bold text-setGray-100 capitalize",
+        children: props.slot
+      })
+    })]
+  });
+};
+var Btn4 = function Btn4(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-    href: "",
-    "class": "hover:text-setOrange",
+    href: props.route,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      "class": "flex flex-row bg-setBlue-100 text-setGray-100 h-14 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ",
+      className: "flex flex-col-reverse bg-setBlue-100 text-white h-16 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        "class": " bg-setGray-100 hover:bg-setOrange w-2/12 h-full mr-1 "
+        className: " bg-setGray-100 hover:bg-setOrange w-full h-3 mr-1 "
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        "class": "flex self-center text-2xl font-bold text-setGray-100 hover:text-setOrange ",
-        children: "Label Figma"
+        className: "flex place-self-center mb-1 text-2xl font-bold text-setGray-100 hover:text-setOrange ",
+        children: props.slot
       })]
     })
   });
 };
-var Btn4 = function Btn4() {
+var Btn5 = function Btn5(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-    href: "",
+    className: "",
+    href: props.route,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      "class": "flex flex-col-reverse bg-setBlue-100 text-white h-16 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ",
+      className: "flex flex-row bg-setBlue-100 hover:text-setOrange text-setGray-100 h-14 w-7/12 rounded-xl overflow-hidden text-2xl font-source shadow-md self-center items-center font-bold ",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        "class": " bg-setGray-100 hover:bg-setOrange w-full h-3 mr-1 "
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        "class": "flex place-self-center mb-1 text-2xl font-bold text-setGray-100 hover:text-setOrange ",
-        children: "Label Figma"
+        className: "bg-setOrange w-1/12 h-52 mr-6 "
+      }), props.slot]
+    })
+  });
+};
+var Btn6 = function Btn6(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "bg-setGray-200 w-[400px] my-2 rounded",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      className: "text-1xl font-bold text-setGray-100 p-3",
+      children: props.slot
+    })
+  });
+};
+var Btn7 = function Btn7(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "flex items-center justify-center w-[400px] mt-4 bg-setOrange h-10 max-w-lg rounded-full text-3xl font-source shadow-md  ",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      className: "text-setGray-100 font-bold uppercase",
+      children: props.slot
+    })
+  });
+};
+var CreditCard = function CreditCard() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    className: "my-3 first-card",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+      className: "text-gray-100 shadow-lg shadow-gray-300 w-full md:w-96 h-52 bg-gradient-to-br from-gray-800 to-gray-400 p-4 rounded relative max-w-[24rem]",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+        className: "font-bold",
+        children: "Aditya Singh"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("p", {
+        className: "my-1 text-sm",
+        children: ["Frontend, Backend & ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("br", {}), "Devops Engineer."]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+        className: "text-sm",
+        children: "xxxxxxxx@xxxxx.com"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("span", {
+        className: "text-lg font-extrabold absolute right-4 bottom-4",
+        children: "BRAND"
       })]
     })
   });
-}; // if (document.getElementById('buttons')) {
-//     ReactDOM.render(<Buttons />, document.getElementById('buttons'));
-// }
+};
+var MinCardShop = function MinCardShop(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
+    className: "shadow-lg shadow-purple-200 p-4 w-full md:w-96 h-52 rounded  flex flex-col justify-center items-center mt-4 max-w-[24rem]",
+    style: {
+      backgroundImage: "url(" + props.banner + ")"
+    },
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
+      className: "w-20 h-20 object-cover rounded-full mb-2 bg-setGray-100",
+      src: props.logo,
+      alt: "logo"
+    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      className: "text-gray-100 font-semibold",
+      children: props.name
+    })]
+  });
+};
 
 /***/ }),
 
-/***/ "./resources/js/components/Label.jsx":
-/*!*******************************************!*\
-  !*** ./resources/js/components/Label.jsx ***!
-  \*******************************************/
+/***/ "./resources/js/components/CardUser.jsx":
+/*!**********************************************!*\
+  !*** ./resources/js/components/CardUser.jsx ***!
+  \**********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5537,45 +5604,81 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_Buttons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Buttons */ "./resources/js/components/Buttons.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
 
 
-var Label = function Label() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-      href: "",
-      "class": "hover:text-setOrange",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        "class": "flex flex-row bg-setBlue-100 text-setGray-100 h-14 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          "class": " bg-setGray-100 hover:bg-setOrange w-2/12 h-full mr-1 "
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          "class": "flex self-center text-2xl font-bold text-setGray-100 hover:text-setOrange ",
-          children: "Label Figma"
-        })]
-      })
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-      href: "",
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-        "class": "flex flex-col-reverse bg-setBlue-100 text-white h-16 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ",
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          "class": " bg-setGray-100 hover:bg-setOrange w-full h-3 mr-1 "
-        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-          "class": "flex place-self-center mb-1 text-2xl font-bold text-setGray-100 hover:text-setOrange ",
-          children: "Label Figma"
-        })]
-      })
-    })]
+
+
+var CardUser = function CardUser(props) {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(JSON.parse(props.user)),
+      _useState2 = _slicedToArray(_useState, 2),
+      user = _useState2[0],
+      setUser = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(JSON.parse(props.shops)),
+      _useState4 = _slicedToArray(_useState3, 2),
+      shops = _useState4[0],
+      setShops = _useState4[1];
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    className: "w-full flex justify-center",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "w-full rounded flex flex-col justify-center items-center md:w-[931px] bg-setBlue-200 p-3",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn2, {
+        slot: "perfil de usuario"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+        className: "m-3 w-32 h-32 sm:w-48 sm:h-48 lg:w-[167px] lg:h-[167px] rounded-full shadow-lg mx-auto bg-setGray-100 z-10 overflow-hidden flex items-center",
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {
+          src: "",
+          className: "w-full"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn3, {
+        slot: user.name
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn3, {
+        slot: user.email
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn6, {
+        slot: user.address.replace(/[_]/gi, ' ')
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn7, {
+        slot: "metodos de pago"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Buttons__WEBPACK_IMPORTED_MODULE_2__.CreditCard, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn7, {
+        slot: "mis tiendas"
+      }), shops.map(function (shop, index) {
+        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Buttons__WEBPACK_IMPORTED_MODULE_2__.MinCardShop, {
+            logo: shop.logo,
+            banner: shop.banner,
+            name: shop.name.replace(/[_]/gi, ' ')
+          })
+        }, index);
+      })]
+    })
   });
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Label);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CardUser);
 
-if (document.getElementById('label')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Label, {}), document.getElementById('label'));
+if (document.getElementById("card-user")) {
+  var user = document.getElementById('card-user').getAttribute('user');
+  var shops = document.getElementById('card-user').getAttribute('shops');
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(CardUser, {
+    user: user,
+    shops: shops
+  }), document.getElementById("card-user"));
 }
 
 /***/ }),
@@ -6177,7 +6280,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ProductShow = function ProductShow() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
-    className: "bg-setBlue-100 font-source flex flex-col items-center p-[20px] rounded relative f-full",
+    className: "bg-setBlue-100 font-source flex flex-col items-center p-[20px] rounded relative f-full sm:flex-col",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
       className: "flex flex-col lg:flex-row justify-around w-full lg:flex-nowrap mt-3 mb-3",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {

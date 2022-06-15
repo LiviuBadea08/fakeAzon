@@ -21,4 +21,7 @@
     </div>
     </div>
 </div>
+<div class="container my-4">
+    <div id="card-user" user={{ $user }} shops={{ $user->shop }} ></div>
+</div>
 @endsection

@@ -35,4 +35,4 @@ require('./components/products/ProductShow');
 
 // extra 
 require('./components/Buttons');
-require('./components/Label');
+require('./components/CardUser');
