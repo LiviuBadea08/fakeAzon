@@ -6035,7 +6035,7 @@ var Navbar = function Navbar() {
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
         className: "nav",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-          className: "flex items-center justify-between md:justify-start",
+          className: "flex items-center justify-between md:justify-start overflow-hidden",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
             href: "/",
             className: "w-1/4 mx-2",
@@ -6044,7 +6044,7 @@ var Navbar = function Navbar() {
               alt: ""
             })
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("ul", {
-            className: "flex capitalize font-bold font-source",
+            className: "flex capitalize font-bold font-source overflow-x-auto",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
               className: "  border-b-4 border-setBlue-300 hover:border-setOrange",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
@@ -6085,7 +6085,7 @@ var Navbar = function Navbar() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: "border-b-4 border-setBlue-300 hover:border-setOrange",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-              href: "/login",
+              href: "/profile",
               className: "px-4 pb-[0.95rem] pt-4 flex items-center",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("i", {
                 className: "fa-solid fa-user text-setGray-200 text-3xl"
