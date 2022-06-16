@@ -14,7 +14,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $category = Category::All();
+        return view('category.index' , compact('category'));
     }
 
     /**
@@ -23,7 +24,8 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {
+    {   
+        return view('products.create');
         //
     }
 
@@ -34,7 +36,14 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {   
+        Category::create([
+
+            'name' => $request['name'],
+            
+        ]);
+        
+        return redirect()->route('products.create');
         //
     }
 
@@ -46,6 +55,7 @@ class CategoryController extends Controller
      */
     public function show(Category $category)
     {
+        return view('products.show', compact('category'));
         //
     }
 
@@ -56,7 +66,10 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit(Category $category)
-    {
+    {   
+        $category = Category::find($product-> id);
+
+        return view('category.edit', compact('category'));
         //
     }
 
@@ -68,7 +81,11 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Category $category)
-    {
+    {   
+        category::find($product->id)
+            ->update([
+                'name' => $request['name'],
+            ]);
         //
     }
 
@@ -79,7 +96,10 @@ class CategoryController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy(Category $category)
-    {
+    {   
+        category::destroy($category->product_id);
+
+        return redirect()-> route('category.index');
         //
     }
 }
