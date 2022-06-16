@@ -5553,7 +5553,7 @@ var Btn7 = function Btn7(props) {
 };
 var CreditCard = function CreditCard() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    className: "my-3 first-card",
+    className: "my-3 ",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
       className: "text-gray-100 shadow-lg shadow-gray-300 w-full md:w-96 h-52 bg-gradient-to-br from-gray-800 to-gray-400 p-4 rounded relative max-w-[24rem]",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
@@ -5574,7 +5574,7 @@ var CreditCard = function CreditCard() {
 };
 var MinCardShop = function MinCardShop(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-    className: "shadow-lg shadow-purple-200 p-4 w-full md:w-96 h-52 rounded  flex flex-col justify-center items-center mt-4 max-w-[24rem]",
+    className: "first-card p-4 w-full md:w-96 h-52 rounded  flex flex-col justify-center items-center mt-4 max-w-[24rem]",
     style: {
       backgroundImage: "url(" + props.banner + ")"
     },
