@@ -66,7 +66,7 @@ const ProductShow = () => {
     </div>
     )
 }
- <div className='bg-setBlue-100 font-source flex flex-col items-center p-[20px] rounded relative f-full'>
+	<div className='bg-setBlue-100 font-source flex flex-col items-center p-[20px] rounded relative f-full'>
       <div className='flex flex-col lg:flex-row justify-around w-full lg:flex-nowrap mt-3 mb-3'>
 			{/* IMAGE CONTAINER */}
         <div className='flex flex-col items-center w-full mb-5'>
