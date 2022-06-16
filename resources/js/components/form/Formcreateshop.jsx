@@ -9,7 +9,7 @@ function Formcreateshop() {
 <form className="font-source font-bold" >
     <div class="mb-6">
         <label for="name" class="block mb-2 text-sm font-medium text-setBlue-300 dark:text-gray-300">Nombre de Marca</label>
-        <input type="name" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-setBlue-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-setGray-100 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="brand name" required/>
+        <input type="name" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-setBlue-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="brand name" required/>
     </div>
 
     <div class="mb-6">
