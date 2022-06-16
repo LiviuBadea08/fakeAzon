@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
 import ReactDOM from 'react-dom';
-import {Btn2, Btn3, Btn6, Btn7, CreditCard, MinCardShop} from '../components/Buttons'
+import {Btn1, Btn2, Btn3, Btn6, Btn7, CreditCard, MinCardShop} from '../components/Buttons'
 
 const CardUser = (props) => {
     const [user, setUser] = useState(JSON.parse(props.user))
     const [shops, setShops] = useState(JSON.parse(props.shops))
+
   return (
     <div className='w-full flex justify-center'>
         <div className='w-full rounded flex flex-col justify-center items-center md:w-[931px] bg-setBlue-200 p-3'>
@@ -22,13 +23,14 @@ const CardUser = (props) => {
             <Btn7 slot="metodos de pago"></Btn7>
             <CreditCard />
 
-            <Btn7 slot="mis tiendas"></Btn7>
+            <Btn7 slot='mis tiendas'></Btn7>
             {shops.map((shop, index) => {
                 return <div key={index}>
                     <MinCardShop logo={shop.logo} banner={shop.banner} name={shop.name.replace(/[_]/gi, ' ')}></MinCardShop>
                 </div>
             }
             )}
+            <Btn1 slot='Crear Tienda' route='/shops/create'></Btn1>
         </div>
     </div>
   )

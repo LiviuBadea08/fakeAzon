@@ -1,18 +1,22 @@
 import React from "react";
 
+export const Btn0 = (props) => {
+    return (
+        <button type="submit" className="flex items-center justify-center w-[400px] mt-4 bg-setOrange h-10 max-w-lg rounded-full text-3xl font-source shadow-md  ">
+            <p className="text-setGray-100 font-bold uppercase">{props.slot}</p>
+        </button>
+    );
+};
 export const Btn1 = (props) => {
     return (
-        <a className="" href={props.route}>
-            <div className="flex self-center items-center flex-row bg-setBlue-100 text-setGray-100 hover:text-setOrange font-bold  h-14 max-w-sm rounded-[15px] overflow-hidden text-3xl font-source shadow-md  ">
-                <div className=" bg-setOrange w-2/12 h-full mr-1 "></div>
-                {props.slot}
-            </div>
+        <a href={props.route} className="flex items-center justify-center w-[400px] mt-4 bg-setOrange h-10 max-w-lg rounded-full text-3xl font-source shadow-md  ">
+            <p className="text-setGray-100 font-bold uppercase">{props.slot}</p>
         </a>
     );
 };
 export const Btn2 = (props) => {
     return (
-        <div className="flex items-center justify-center w-[637px]  bg-setOrange h-11 max-w-lg rounded-full text-3xl font-source shadow-md  ">
+        <div className="flex items-center justify-center w-[637px] bg-setOrange h-11 max-w-lg rounded-full text-3xl font-source shadow-md  ">
             <p className="text-setGray-100 font-bold uppercase">{props.slot}</p>
         </div>
     );

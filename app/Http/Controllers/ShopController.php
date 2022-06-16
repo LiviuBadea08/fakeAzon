@@ -36,7 +36,14 @@ class ShopController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = auth()->user();
+        
+        $user->shop()->create([
+            'name' => str_replace(' ', '_', $request['name']),
+            'logo' => $request['logo'],
+            'banner' => $request['banner'],
+        ]);
+        return redirect()->route('profile');
     }
 
     /**
@@ -58,7 +65,7 @@ class ShopController extends Controller
      */
     public function edit(Shop $shop)
     {
-        
+        return view('shops.edit', compact('shop'));
     }
 
     /**
@@ -70,7 +77,12 @@ class ShopController extends Controller
      */
     public function update(Request $request, Shop $shop)
     {
-        //
+        $shop->update([
+            'name' => str_replace(' ', '_', $request['name']),
+            'logo' => $request['logo'],
+            'banner' => $request['banner'],
+        ]);
+        return redirect()->route('profile');
     }
 
     /**

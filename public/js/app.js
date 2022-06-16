@@ -5400,7 +5400,9 @@ __webpack_require__(/*! ./components/shop/Products */ "./resources/js/components
 __webpack_require__(/*! ./components/shop/ShopCard */ "./resources/js/components/shop/ShopCard.jsx"); // form 
 
 
-__webpack_require__(/*! ./components/form/Login */ "./resources/js/components/form/Login.jsx"); // products
+__webpack_require__(/*! ./components/form/Login */ "./resources/js/components/form/Login.jsx");
+
+__webpack_require__(/*! ./components/form/CreateShop */ "./resources/js/components/form/CreateShop.jsx"); // products
 
 
 __webpack_require__(/*! ./components/products/ProductShow */ "./resources/js/components/products/ProductShow.jsx"); // extra 
@@ -5457,6 +5459,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Btn0": () => (/* binding */ Btn0),
 /* harmony export */   "Btn1": () => (/* binding */ Btn1),
 /* harmony export */   "Btn2": () => (/* binding */ Btn2),
 /* harmony export */   "Btn3": () => (/* binding */ Btn3),
@@ -5472,21 +5475,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var Btn0 = function Btn0(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+    type: "submit",
+    className: "flex items-center justify-center w-[400px] mt-4 bg-setOrange h-10 max-w-lg rounded-full text-3xl font-source shadow-md  ",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      className: "text-setGray-100 font-bold uppercase",
+      children: props.slot
+    })
+  });
+};
 var Btn1 = function Btn1(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("a", {
-    className: "",
     href: props.route,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
-      className: "flex self-center items-center flex-row bg-setBlue-100 text-setGray-100 hover:text-setOrange font-bold  h-14 max-w-sm rounded-[15px] overflow-hidden text-3xl font-source shadow-md  ",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-        className: " bg-setOrange w-2/12 h-full mr-1 "
-      }), props.slot]
+    className: "flex items-center justify-center w-[400px] mt-4 bg-setOrange h-10 max-w-lg rounded-full text-3xl font-source shadow-md  ",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
+      className: "text-setGray-100 font-bold uppercase",
+      children: props.slot
     })
   });
 };
 var Btn2 = function Btn2(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-    className: "flex items-center justify-center w-[637px]  bg-setOrange h-11 max-w-lg rounded-full text-3xl font-source shadow-md  ",
+    className: "flex items-center justify-center w-[637px] bg-setOrange h-11 max-w-lg rounded-full text-3xl font-source shadow-md  ",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
       className: "text-setGray-100 font-bold uppercase",
       children: props.slot
@@ -5665,6 +5676,9 @@ var CardUser = function CardUser(props) {
             name: shop.name.replace(/[_]/gi, ' ')
           })
         }, index);
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_components_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn1, {
+        slot: "Crear Tienda",
+        route: "/shops/create"
       })]
     })
   });
@@ -5679,6 +5693,137 @@ if (document.getElementById("card-user")) {
     user: user,
     shops: shops
   }), document.getElementById("card-user"));
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/form/CreateShop.jsx":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/form/CreateShop.jsx ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var _Buttons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Buttons */ "./resources/js/components/Buttons.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+var CreateShop = function CreateShop(props) {
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.name.replace(/[_]/gi, ' ')),
+      _useState2 = _slicedToArray(_useState, 2),
+      name = _useState2[0],
+      setName = _useState2[1];
+
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.logo),
+      _useState4 = _slicedToArray(_useState3, 2),
+      logo = _useState4[0],
+      setLogo = _useState4[1];
+
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.banner),
+      _useState6 = _slicedToArray(_useState5, 2),
+      banner = _useState6[0],
+      setBanner = _useState6[1];
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
+    className: "w-full flex justify-center",
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+      className: "w-full rounded flex flex-col justify-center items-center md:w-[931px] bg-setBlue-200 p-3",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("p", {
+        className: "text-setGray-100 font-bold font-source uppercase text-3xl",
+        children: props.title
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        "class": "mb-6 md:w-[637px] w-full",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+          "for": "name",
+          className: "block mb-2 text-sm font-medium text-setBlue-300 dark:text-gray-300",
+          children: "Nombre de la Tienda"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+          type: "text",
+          name: "name",
+          id: "name",
+          onChange: function onChange(event) {
+            return setName(event.target.value);
+          },
+          value: name,
+          className: "shadow-sm bg-gray-50 border border-gray-300 text-setBlue-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5",
+          placeholder: "nombre"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "mb-6 md:w-[637px] w-full",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+          "for": "logo",
+          "class": "block mb-2 text-sm font-medium text-setBlue-300 dark:text-gray-300",
+          children: "Logo"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+          type: "url",
+          name: "logo",
+          id: "logo",
+          onChange: function onChange(event) {
+            return setLogo(event.target.value);
+          },
+          value: logo,
+          className: "shadow-sm bg-gray-50 border border-gray-300 text-setBlue-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5",
+          placeholder: "logo"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("div", {
+        className: "mb-2 md:w-[637px] w-full",
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("label", {
+          "for": "banner",
+          className: "block mb-2 text-sm font-medium text-setBlue-300 dark:text-gray-300",
+          children: "Banner"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("input", {
+          type: "url",
+          name: "banner",
+          id: "logo",
+          onChange: function onChange(event) {
+            return setBanner(event.target.value);
+          },
+          value: banner,
+          className: "shadow-sm bg-gray-50 border border-gray-300 text-setBlue-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5",
+          placeholder: "banner"
+        })]
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Buttons__WEBPACK_IMPORTED_MODULE_2__.Btn0, {
+        slot: "Agregar"
+      })]
+    })
+  });
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CreateShop);
+
+if (document.getElementById("create-shop")) {
+  var title = document.getElementById("create-shop").getAttribute('title');
+  var name = document.getElementById("create-shop").getAttribute('name');
+  var logo = document.getElementById("create-shop").getAttribute('logo');
+  var banner = document.getElementById("create-shop").getAttribute('banner');
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(CreateShop, {
+    title: title,
+    name: name,
+    logo: logo,
+    banner: banner
+  }), document.getElementById("create-shop"));
 }
 
 /***/ }),

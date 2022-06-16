@@ -29,6 +29,7 @@ require('./components/shop/ShopCard');
 
 // form 
 require('./components/form/Login');
+require('./components/form/CreateShop');
 
 // products
 require('./components/products/ProductShow');
