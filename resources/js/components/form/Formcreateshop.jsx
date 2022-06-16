@@ -14,7 +14,7 @@ function Formcreateshop() {
 
     <div class="mb-6">
         <label for="email" class="block mb-2 text-sm font-medium text-setBlue-300 dark:text-gray-300">Imagen de Marca</label>
-        <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-setBlue-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-setGray-100 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="brand image" required/>
+        <input name="email" type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-setBlue-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-setGray-100 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="brand image" required/>
     </div>
 
     <div class="mb-6">

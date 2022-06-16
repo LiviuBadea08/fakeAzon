@@ -35,7 +35,9 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/profile', [UserController::class, 'index'])->name('profile');
 
-Route::resource('shops', ShopController::class);
-Route::resource('products', ProductController::class);
+Route::resources([
+    'shops'=> ShopController::class,
+    'products'=> ProductController::class,
+]);
 Auth::routes();
 

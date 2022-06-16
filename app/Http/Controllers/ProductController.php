@@ -25,6 +25,7 @@ class ProductController extends Controller
      */
     public function create()
     {
+        return view('products.create');
         //
     }
 
@@ -36,8 +37,20 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        Product::create([
+            'name' => $request['name'],
+            'description' => $request['description'],
+            'price' => $request['price'],
+            'picture' => $request['picture'],
+        ]);
+        
+        return redirect ()->route ('products.create');
+        
         //
     }
+
+
+
 
     /**
      * Display the specified resource.
@@ -58,6 +71,11 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
+        $product = product::find($product-> id); 
+
+        return view('products.edit', compact('product'));
+        
+
         //
     }
 
@@ -70,6 +88,17 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
+        product::find($product-> id)
+            ->update([
+                'name' => $request['name'],
+                'description' => $request['description'],
+                'price' => $request['price'],
+                'picture' => $request['picture'],
+            ]);
+
+            return redirect()-> route('products.index');
+
+
         //
     }
 
@@ -80,7 +109,11 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy(Product $product)
-    {
+    {   
+        product::destroy($product-> id);
+
+        return redirect()-> route('product.index');
+        
         //
     }
 }

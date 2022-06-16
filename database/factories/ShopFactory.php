@@ -19,8 +19,8 @@ class ShopFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'logo' => $this->faker->imageUrl($width = 640, $height = 480),
-            
-            'banner' => $this->faker->imageUrl($width = 640, $height = 480),//new 
+            'banner' => $this->faker->imageUrl($width = 576, $height = 1024),//new 
         ];
     }
 }
+
