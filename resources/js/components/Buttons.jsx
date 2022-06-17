@@ -34,15 +34,9 @@ export const Btn3 = (props) => {
 };
 export const Btn4 = (props) => {
     return (
-        <a href={props.route}>
-            <div className="flex flex-col-reverse bg-setBlue-100 text-white h-16 w-52 rounded-xl overflow-hidden text-3xl font-source shadow-md  ">
-                <div className=" bg-setGray-100 hover:bg-setOrange w-full h-3 mr-1 "></div>
-
-                <div className="flex place-self-center mb-1 text-2xl font-bold text-setGray-100 hover:text-setOrange ">
-                    {props.slot}
-                </div>
-            </div>
-        </a>
+        <button type="submit" className="w-full bg-setOrange rounded-full h-14 mt-3">
+            <p className="text-setGray-100 font-bold uppercase text-3xl font-source">{props.slot}</p>
+        </button>
     );
 };
 export const Btn5 = (props) => {
@@ -57,7 +51,7 @@ export const Btn5 = (props) => {
 };
 export const Btn6 = (props) => {
     return (
-        <div className="bg-setGray-200 w-[400px] my-2 rounded">
+        <div className="bg-setGray-200 w-[400px] my-2 rounded ">
             <p className="text-1xl font-bold text-setGray-100 p-3">{props.slot}</p>
         </div>
     );

@@ -25,7 +25,9 @@
     @endif
 
 <div class="container my-4 flex flex-col items-center justify-center">
+
     <div id="card-user" user={{ $user }} shops={{ $user->shop }} ></div>
+
     <a class="w-full flex justify-center items-center rounded-full md:w-[931px] bg-setOrange h-11 my-3" href="{{ route('logout') }}"
     onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">

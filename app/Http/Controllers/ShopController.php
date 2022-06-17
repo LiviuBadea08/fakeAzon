@@ -12,6 +12,13 @@ class ShopController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function shopProducts(Shop $shop)
+    {
+        $products = $shop->product;
+        return view('shops.shopProducts', compact('products', 'shop'));
+    }
+
     public function index()
     {
         $shops = Shop::all();
@@ -93,6 +100,7 @@ class ShopController extends Controller
      */
     public function destroy(Shop $shop)
     {
-        //
+        $shop->delete();
+        return redirect()->route('profile');
     }
 }

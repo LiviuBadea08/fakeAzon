@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use App\Models\Shop;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -23,8 +24,9 @@ class ProductController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($shopId)
     {
+        return view('products.create', compact('shopId'));
         //
     }
 
@@ -36,6 +38,18 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
+        $shop = Shop::find($request['shopId']);
+        $route = "shopProducts/" . $shop->id;
+
+        $shop->product()->create([
+            'name' => str_replace(' ', '_', $request['name']),
+            'description' => str_replace(' ', '_', $request['description']),
+            'price' => $request['price'],
+            'picture' => $request['picture'],
+        ]);
+        
+        return redirect($route);
+        
         //
     }
 
@@ -58,7 +72,7 @@ class ProductController extends Controller
      */
     public function edit(Product $product)
     {
-        //
+        return view('products.edit', compact('product'));
     }
 
     /**
@@ -69,8 +83,16 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Product $product)
-    {
-        //
+    {       
+        $route = "shopProducts/" . $product->shop->id;
+        $product->update([
+            'name' => str_replace(' ', '_', $request['name']),
+            'description' => str_replace(' ', '_', $request['description']),
+            'price' => $request['price'],
+            'picture' => $request['picture'],
+        ]);
+
+        return redirect($route);
     }
 
     /**
@@ -80,7 +102,12 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy(Product $product)
-    {
+    {   
+        $route = "shopProducts/" . $product->shop->id;
+        product::destroy($product-> id);
+
+        return redirect($route);
+        
         //
     }
 }

@@ -30,6 +30,7 @@ require('./components/shop/ShopCard');
 // form 
 require('./components/form/Login');
 require('./components/form/CreateShop');
+require('./components/form/CreateProduct');
 
 // products
 require('./components/products/ProductShow');
@@ -37,3 +38,4 @@ require('./components/products/ProductShow');
 // extra 
 require('./components/Buttons');
 require('./components/CardUser');
+require('./components/Table');

@@ -25,9 +25,9 @@ const CardUser = (props) => {
 
             <Btn7 slot='mis tiendas'></Btn7>
             {shops.map((shop, index) => {
-                return <div key={index}>
+                return <a href={'/shopProducts/' + shop.id} key={index}>
                     <MinCardShop logo={shop.logo} banner={shop.banner} name={shop.name.replace(/[_]/gi, ' ')}></MinCardShop>
-                </div>
+                </a>
             }
             )}
             <Btn1 slot='Crear Tienda' route='/shops/create'></Btn1>

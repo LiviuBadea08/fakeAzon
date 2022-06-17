@@ -65,30 +65,40 @@ class DatabaseSeeder extends Seeder
             'shop_id' =>  $shop1->id,
             'category_id' => $category1->id,
             'name' => 'comida_de_michis',
+            'description' => "Lorem_Ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry._Lorem_Ipsum_has_been_the_industry's_standard_dummy_text_ever_since_the_1500s,_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book.",
+            'price' => 0,
             'picture' => 'https://gluc.mx/u/fotografias/m/2020/6/17/f800x450-28825_80271_5050.jpg',
         ]);
         Product::factory()->create([
             'shop_id' =>  $shop1->id,
             'category_id' => $category1->id,
             'name' => 'jugete_de_michis',
+            'description' => "Lorem_Ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry._Lorem_Ipsum_has_been_the_industry's_standard_dummy_text_ever_since_the_1500s,_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book.",
+            'price' => 0,
             'picture' => 'https://www.lanacion.com.py/resizer/Zq8pB8A8w4wq8xWZ4RhSuRBA00M=/fit-in/1000x800/smart/cloudfront-us-east-1.images.arcpublishing.com/lanacionpy/5DBRCYFHBZDULJYBFPKHGQX4TE.jpg',
         ]);
         Product::factory()->create([
             'shop_id' =>  $shop1->id,
             'category_id' => $category2->id,
             'name' => 'sabanas_para_jhon',
+            'description' => "Lorem_Ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry._Lorem_Ipsum_has_been_the_industry's_standard_dummy_text_ever_since_the_1500s,_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book.",
+            'price' => 0,
             'picture' => 'https://www.poresto.net/u/fotografias/m/2021/7/9/f768x1-98332_98459_0.jpg',
         ]);
         Product::factory()->create([
             'shop_id' =>  $shop1->id,
             'category_id' => $category1->id,
             'name' => 'pelotas_para_michis',
+            'description' => "Lorem_Ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry._Lorem_Ipsum_has_been_the_industry's_standard_dummy_text_ever_since_the_1500s,_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book.",
+            'price' => 0,
             'picture' => 'https://pbs.twimg.com/profile_images/1309180352997527553/QD6OjJQ0_400x400.jpg',
         ]);
         Product::factory()->create([
             'shop_id' =>  $shop1->id,
             'category_id' => $category1->id,
             'name' => 'bebedero_para_michis',
+            'description' => "Lorem_Ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry._Lorem_Ipsum_has_been_the_industry's_standard_dummy_text_ever_since_the_1500s,_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book.",
+            'price' => 0,
             'picture' => 'https://la-lista.com/wp-content/uploads/2022/05/Gato.jpg',
         ]);
 
