@@ -5589,10 +5589,11 @@ var MinCardShop = function MinCardShop(props) {
     style: {
       backgroundImage: "url(" + props.banner + ")"
     },
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
-      className: "w-20 h-20 object-cover rounded-full mb-2 bg-setGray-100",
+    children: [props.logo ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("img", {
       src: props.logo,
-      alt: "logo"
+      className: "w-20 h-20 object-cover rounded-full mb-2 bg-setGray-100"
+    }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("i", {
+      className: "fa-solid fa-shop text-4xl mb-2"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("p", {
       className: "text-gray-100 font-semibold",
       children: props.name

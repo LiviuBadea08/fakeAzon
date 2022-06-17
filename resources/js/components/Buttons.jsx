@@ -81,7 +81,7 @@ export const CreditCard = () => {
 export const MinCardShop = (props) => {
     return (
         <div className="first-card p-4 w-full md:w-96 h-52 rounded  flex flex-col justify-center items-center mt-4 max-w-[24rem]" style={{ backgroundImage: `url(`+props.banner+`)` }}>
-            <img className="w-20 h-20 object-cover rounded-full mb-2 bg-setGray-100" src={props.logo} alt="logo" />
+            {props.logo ? <img src={props.logo} className="w-20 h-20 object-cover rounded-full mb-2 bg-setGray-100" /> : <i className="fa-solid fa-shop text-4xl mb-2"></i> }
             <p className="text-gray-100 font-semibold">{props.name}</p>
         </div>
     );
