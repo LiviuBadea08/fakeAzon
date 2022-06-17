@@ -92,9 +92,9 @@ We recommend you to install [Tailwind](httphttps://tailwindcss.com/docs/guides/l
 <!-- ## (explicación past events a clientes)
 (aquí adri pone su explicación)
  Me muero jajaja. XD  -->
-## The project in use
+<!-- ## The project in use
 
-(Aquí ponemos las fotos)
+(Aquí ponemos las fotos) -->
 
 ## Developers
 - [Adrian Pelayo](https://github.com/bigbae18)
