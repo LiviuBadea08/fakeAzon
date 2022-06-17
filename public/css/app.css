@@ -21637,6 +21637,10 @@ video {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -21644,14 +21648,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
 }
 .font-bold {
   font-weight: 700;

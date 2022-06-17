@@ -101,12 +101,11 @@ class ProductController extends Controller
      * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy($id)
     {   
-        $route = "shopProducts/" . $product->shop->id;
-        product::destroy($product-> id);
+        Product::destroy($id);
 
-        return redirect($route);
+        return redirect()->back();
         
         //
     }

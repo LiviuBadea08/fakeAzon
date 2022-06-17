@@ -36,13 +36,14 @@ Route::get('/profile', [UserController::class, 'index'])->name('profile');
 
 Route::get('/shopProducts/{shop}', [ShopController::class, 'shopProducts'])->name('shopProducts');
 
-Route::get('products/create/{shopId}', [ProductController::class, 'create'])->name('product.create');
 
 Route::resources([
     'shops' => ShopController::class,
-    'products' => ProductController::class,
     'categories' => CategoryController::class
 ]);
+Route::resource('products', ProductController::class)->except(['create', 'destroy']);
+Route::get('products/create/{shopId}', [ProductController::class, 'create'])->name('product.create');
+Route::get('products/{id}/destroy', [ProductController::class, 'destroy'])->name('product.destroy');
 
 Auth::routes();
 
