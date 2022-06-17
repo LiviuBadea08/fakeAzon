@@ -13,7 +13,7 @@ const Navbar = () => {
                         </a>
                         <ul className="flex capitalize font-bold font-source overflow-x-auto">
                             <li className="  border-b-4 border-setBlue-300 hover:border-setOrange">
-                                <a href="/" className="pb-[1.25rem] pt-4 px-4 flex items-center">
+                                <a href="/home" className="pb-[1.25rem] pt-4 px-4 flex items-center">
                                     <p className="text-setGray-100 text-2xl">
                                         inicio
                                     </p>
@@ -45,7 +45,7 @@ const Navbar = () => {
                             </a>
                         </div>
                         <div className="border-b-4 border-setBlue-300 hover:border-setOrange">
-                            <a href="/" className="px-4 pb-[0.95rem] pt-4 flex items-center">
+                            <a href="/home" className="px-4 pb-[0.95rem] pt-4 flex items-center">
                                 <i className="fa-solid fa-bag-shopping text-setGray-200 text-3xl" />
                             </a>
                         </div>

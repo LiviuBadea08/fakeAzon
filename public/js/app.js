@@ -6569,7 +6569,7 @@ var Navbar = function Navbar() {
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("li", {
               className: "  border-b-4 border-setBlue-300 hover:border-setOrange",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-                href: "/",
+                href: "/home",
                 className: "pb-[1.25rem] pt-4 px-4 flex items-center",
                 children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("p", {
                   className: "text-setGray-100 text-2xl",
@@ -6615,7 +6615,7 @@ var Navbar = function Navbar() {
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
             className: "border-b-4 border-setBlue-300 hover:border-setOrange",
             children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {
-              href: "/",
+              href: "/home",
               className: "px-4 pb-[0.95rem] pt-4 flex items-center",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("i", {
                 className: "fa-solid fa-bag-shopping text-setGray-200 text-3xl"
@@ -12152,7 +12152,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".first-card{\n    transition: all 400ms ease;\n}\n.first-card div{\n    transition: all 400ms ease;\n}\n\n.first-card:hover{\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\n    transform: translateY(-3%);\n}\n.first-card:hover div{\n    transform: scale(1.1);\n}\n\n.other-card{\n    transition: all 400ms ease;\n    display: flex;\n    align-items: flex-end;\n}\n\n.other-card:hover{\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\n    transform: translateY(-3%);\n}\n\n.other-card div:first-child{\n    transition: all 400ms ease;\n    position: absolute;\n}\n\n.other-card:hover div:first-child{\n    transform: scale(1.1);\n}\n\n.other-card div:nth-child(2){\n    text-transform: uppercase;\n    position:absolute;\n    width: 100%;\n    height: 25%;\n    background: rgba(1, 7, 8, 0.7);\n    opacity: 0;\n    visibility: hidden;\n    transition: all 400ms ease;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.other-card:hover div:nth-child(2){\n    opacity: 1;\n    visibility: visible;\n    \n}\n\n.other-card:hover div:nth-child(2) h3{\n    text-align: center;\n}\n.slide{\n    width:100%; \n    height:100%;\n\n    position: absolute;\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-attachment: absolute;\n    background-position: center;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".first-card{\r\n    transition: all 400ms ease;\r\n}\r\n.first-card div{\r\n    transition: all 400ms ease;\r\n}\r\n\r\n.first-card:hover{\r\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\r\n    transform: translateY(-3%);\r\n}\r\n.first-card:hover div{\r\n    transform: scale(1.1);\r\n}\r\n\r\n.other-card{\r\n    transition: all 400ms ease;\r\n    display: flex;\r\n    align-items: flex-end;\r\n}\r\n\r\n.other-card:hover{\r\n    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);\r\n    transform: translateY(-3%);\r\n}\r\n\r\n.other-card div:first-child{\r\n    transition: all 400ms ease;\r\n    position: absolute;\r\n}\r\n\r\n.other-card:hover div:first-child{\r\n    transform: scale(1.1);\r\n}\r\n\r\n.other-card div:nth-child(2){\r\n    text-transform: uppercase;\r\n    position:absolute;\r\n    width: 100%;\r\n    height: 25%;\r\n    background: rgba(1, 7, 8, 0.7);\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    transition: all 400ms ease;\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n}\r\n\r\n.other-card:hover div:nth-child(2){\r\n    opacity: 1;\r\n    visibility: visible;\r\n    \r\n}\r\n\r\n.other-card:hover div:nth-child(2) h3{\r\n    text-align: center;\r\n}\r\n.slide{\r\n    width:100%; \r\n    height:100%;\r\n\r\n    position: absolute;\r\n    background-size: cover;\r\n    background-repeat: no-repeat;\r\n    background-attachment: absolute;\r\n    background-position: center;\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -12176,7 +12176,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".nav{\n    display:flex;\n    justify-content:space-between;\n    flex-wrap: nowrap;\n}\n@media (max-width: 640px) {\n    .nav{\n        flex-wrap: wrap;\n    }\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".nav{\r\n    display:flex;\r\n    justify-content:space-between;\r\n    flex-wrap: nowrap;\r\n}\r\n@media (max-width: 640px) {\r\n    .nav{\r\n        flex-wrap: wrap;\r\n    }\r\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
