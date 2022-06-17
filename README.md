@@ -1,64 +1,104 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+### Factozon
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## About the project
+Factozon is part of one of the Factoria F5 Bootcamp projects. The main goals of it are :
 
-## About Laravel
+<!-- - To acquire the ability to create a fully functional database, using the MVC (Model View Controller) design pattern, using PHP, and Laravel. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Give the admin the ability to do CRUD (Create, Read, Update and Delete).
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Implement the rights depending if you are a  Guest, Admin or User.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Understand the Laravel's logic.
 
-## Learning Laravel
+- Use a framework (in our case, we choose Tailwind) -->
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## What is Factozon about?
+Factozon is a web page where you can see stores and their products, purchase and sell your own stock! .
 
-## Laravel Sponsors
+As user you will be able to see eshops and create a Store with your own made selection of products to sell if you want, also this project does give you tools to customize the store and items. If you are interested in one of the products click on them to see more details about it.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+If you add an item by mistake or you don't want some product on your own Factozon Store you will be able to remove them without any worries. 
 
-### Premium Partners
+You will be able to access your profile and modify your data such as email, name and profile picture. And you will also have the chance to remove the seller profile from the account.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
 
-## Contributing
+## Recommended before starting cloning
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+It is recommended to install the last version of  [composer](https://getcomposer.org/) and [xampp](https://www.apachefriends.org/es/index.html)
 
-## Code of Conduct
+## First step
+If you want to see our project you should first clone this repository, to do this, open the terminal in the file you want the project to be saved, and run the following command:
+`$ git clone https://github.com/LiviuBadea08/fakeAzon.git`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+## Nexts steps to follow
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Once you clone our respository, these are the next steps:
 
-## License
+1. Copy the "exemple.env" code and in a new file copy the code from it and name this new file as ".env"
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+2. In this .env file, don't forget to name your DB_DATABASE with the same name as your new table in your local database.
+
+3. Run the following commands:
+
+`$ npm install`
+
+`$ npm run watch`
+
+4, Start your servers in xampp and execute a local server in your code editor typing the following command in a new terminal:
+
+`$ php artisan serve`
+
+
+## Recommended
+We also recommend you to run in your code editor the following commands to avoid possible problems with npm or composer updates.
+
+ `$ composer update`
+ 
+ `$ npm update`
+`$ npm run dev`
+
+## Laravel Support commands
+`$ php artisan key:generate`
+`$ php artisan migrate:refresh --seed`
+
+You are ready!! Now you can see our project!
+
+##For iOS users
+We recommend you to install [Tailwind](httphttps://tailwindcss.com/docs/guides/laravel:// "Tailwind"), because using Tailwind in cdn may cause some troubles.
+
+
+## Tools that used for this project
+- React
+- JavaScript
+- Laravel
+- PHP
+- CSS
+- Tailwind CSS
+- HTML
+- MySQL
+- phpMyAdmin
+- XAMPP
+- Node
+- Composer
+- GitHub
+- Trello
+- Figma
+- Homebrew
+- VScode
+
+<!-- ## (explicación past events a clientes)
+(aquí adri pone su explicación)
+ Me muero jajaja. XD  -->
+## The project in use
+
+(Aquí ponemos las fotos)
+
+## Developers
+- [Adrian Pelayo](https://github.com/bigbae18)
+- [Jhon Vásquez](https://github.com/jhonv4sq) 
+- [Miguel Dominguez](https://github.com/MADROCHA)
+- [Liviu Badea](https://github.com/LiviuBadea08)
+- [Abde Belkhialat](https://github.com/)
